@@ -1,13 +1,14 @@
-import { Search, ShoppingCart, Menu, X, User, LogOut } from 'lucide-react';
+import { Search, ShoppingCart as ShoppingCartIcon, Menu, X, User, LogOut, Settings } from 'lucide-react';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
 import { useState } from 'react';
 import { useAuth } from '../src/contexts/AuthContext';
 import { Link } from 'react-router-dom';
+import { ShoppingCart as ShoppingCartComponent } from '../src/components/cart/ShoppingCart';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { user, isAuthenticated, logout } = useAuth();
+  const { user, isAuthenticated, logout, isAdmin } = useAuth();
 
   return (
     <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
@@ -20,8 +21,8 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <a href="#" className="text-gray-700 hover:text-primary transition-colors">Home</a>
-            <a href="#" className="text-gray-700 hover:text-primary transition-colors">Shop</a>
+            <Link to="/" className="text-gray-700 hover:text-primary transition-colors">Home</Link>
+            <Link to="/products" className="text-gray-700 hover:text-primary transition-colors">Shop</Link>
             <a href="#" className="text-gray-700 hover:text-primary transition-colors">About us</a>
             <a href="#" className="text-gray-700 hover:text-primary transition-colors">Services</a>
             <a href="#" className="text-gray-700 hover:text-primary transition-colors">Blog</a>
@@ -34,16 +35,18 @@ export function Header() {
               <Search className="h-5 w-5" />
             </Button>
             
-            <Button variant="ghost" size="icon" className="relative">
-              <ShoppingCart className="h-5 w-5" />
-              <Badge className="absolute -top-2 -right-2 h-5 w-5 flex items-center justify-center text-xs">
-                3
-              </Badge>
-            </Button>
+            <ShoppingCartComponent />
 
             {/* Auth buttons */}
             {isAuthenticated ? (
               <div className="flex items-center space-x-2">
+                {isAdmin && (
+                  <Link to="/admin">
+                    <Button variant="ghost" size="icon">
+                      <Settings className="h-5 w-5" />
+                    </Button>
+                  </Link>
+                )}
                 <Link to="/account">
                   <Button variant="ghost" size="icon">
                     <User className="h-5 w-5" />

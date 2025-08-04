@@ -12,6 +12,8 @@ import { Login } from './src/components/auth/Login';
 import { Signup } from './src/components/auth/Signup';
 import { Account } from './src/components/account/Account';
 import { ProtectedRoute } from './src/components/auth/ProtectedRoute';
+import { ProductsList } from './src/components/products/ProductsList';
+import { AdminDashboard } from './src/components/admin/AdminDashboard';
 
 const queryClient = new QueryClient();
 
@@ -40,11 +42,20 @@ export default function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
+            <Route path="/products" element={<ProductsList />} />
             <Route 
               path="/account" 
               element={
                 <ProtectedRoute>
                   <Account />
+                </ProtectedRoute>
+              } 
+            />
+            <Route 
+              path="/admin" 
+              element={
+                <ProtectedRoute>
+                  <AdminDashboard />
                 </ProtectedRoute>
               } 
             />
