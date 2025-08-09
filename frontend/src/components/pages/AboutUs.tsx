@@ -67,21 +67,21 @@ export function AboutUs() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div>
-                <Badge className="bg-emerald-100 text-emerald-800 mb-4">About Furni</Badge>
+                <Badge className="bg-emerald-100 text-emerald-800 mb-4 text-lg px-4 py-2">About Furni</Badge>
                 <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
                   Crafting Beautiful
                   <span className="text-emerald-600"> Spaces</span> Since 2008
                 </h1>
-                <p className="text-xl text-gray-600 leading-relaxed">
+                <p className="text-2xl text-gray-600 leading-relaxed">
                   We believe that great furniture should be accessible to everyone. Our mission is to create 
                   beautiful, functional, and sustainable furniture that transforms houses into homes.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700">
+                <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-lg px-8 py-4">
                   Our Story
                 </Button>
-                <Button variant="outline" size="lg">
+                <Button variant="outline" size="lg" className="text-lg px-8 py-4">
                   Meet the Team
                 </Button>
               </div>
@@ -127,8 +127,8 @@ export function AboutUs() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Values</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-5xl font-bold text-gray-900 mb-4">Our Values</h2>
+            <p className="text-2xl text-gray-600 max-w-3xl mx-auto">
               These core values guide everything we do, from design to delivery
             </p>
           </div>
@@ -139,8 +139,8 @@ export function AboutUs() {
                 <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mb-6">
                   <value.icon className="w-8 h-8 text-emerald-600" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">{value.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{value.description}</p>
+                <h3 className="text-2xl font-semibold text-gray-900 mb-4">{value.title}</h3>
+                <p className="text-lg text-gray-600 leading-relaxed">{value.description}</p>
               </div>
             ))}
           </div>
@@ -151,8 +151,8 @@ export function AboutUs() {
       <section className="py-20 bg-white">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Meet Our Team</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-5xl font-bold text-gray-900 mb-4">Meet Our Team</h2>
+            <p className="text-2xl text-gray-600 max-w-3xl mx-auto">
               The passionate people behind Furni who make it all possible
             </p>
           </div>
@@ -168,9 +168,9 @@ export function AboutUs() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-1">{member.name}</h3>
-                  <p className="text-emerald-600 font-medium mb-4">{member.role}</p>
-                  <p className="text-gray-600 leading-relaxed">{member.description}</p>
+                  <h3 className="text-2xl font-semibold text-gray-900 mb-1">{member.name}</h3>
+                  <p className="text-lg text-emerald-600 font-medium mb-4">{member.role}</p>
+                  <p className="text-lg text-gray-600 leading-relaxed">{member.description}</p>
                 </div>
               </div>
             ))}
@@ -181,17 +181,17 @@ export function AboutUs() {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-emerald-600 to-teal-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
+          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
             Ready to Transform Your Space?
           </h2>
-          <p className="text-xl text-emerald-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-2xl text-emerald-100 mb-8 max-w-2xl mx-auto">
             Discover our collection of beautiful, sustainable furniture designed to make your house feel like home.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-emerald-600 hover:bg-gray-50">
+            <Button size="lg" className="bg-white text-emerald-600 hover:bg-gray-50 text-lg px-8 py-4">
               Shop Now
             </Button>
-            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-emerald-600">
+            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-emerald-600 text-lg px-8 py-4">
               Contact Us
             </Button>
           </div>

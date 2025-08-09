@@ -26,7 +26,7 @@
            </div>
  
            {/* Desktop Navigation */}
--          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden lg:flex space-x-2">
 -            <Link to="/" className="text-gray-700 hover:text-primary transition-colors">Home</Link>
 -            <Link to="/products" className="text-gray-700 hover:text-primary transition-colors">Shop</Link>
 -            <Link to="/about" className="text-gray-700 hover:text-primary transition-colors">About us</Link>
@@ -37,19 +37,19 @@
 +            <Link to="/" className="px-4 py-2 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-200 font-medium">
 +              Home
 +            </Link>
-+            <Link to="/products" className="px-4 py-2 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-200 font-medium">
+            <Link to="/products" className="px-5 py-2 text-lg text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-200 font-semibold">
 +              Shop
 +            </Link>
-+            <Link to="/about" className="px-4 py-2 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-200 font-medium">
+            <Link to="/about" className="px-5 py-2 text-lg text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-200 font-semibold">
 +              About us
 +            </Link>
-+            <Link to="/services" className="px-4 py-2 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-200 font-medium">
+            <Link to="/services" className="px-5 py-2 text-lg text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-200 font-semibold">
 +              Services
 +            </Link>
-+            <Link to="/blog" className="px-4 py-2 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-200 font-medium">
+            <Link to="/blog" className="px-5 py-2 text-lg text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-200 font-semibold">
 +              Blog
 +            </Link>
-+            <Link to="/contact" className="px-4 py-2 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-200 font-medium">
+            <Link to="/contact" className="px-5 py-2 text-lg text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-200 font-semibold">
 +              Contact us
 +            </Link>
            </nav>
@@ -133,42 +133,42 @@
 +            <nav className="flex flex-col space-y-2">
 +              <Link 
 +                to="/" 
-+                className="px-4 py-3 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-200 font-medium"
+                className="px-4 py-3 text-lg text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-200 font-semibold"
 +                onClick={() => setIsMenuOpen(false)}
 +              >
 +                Home
 +              </Link>
 +              <Link 
 +                to="/products" 
-+                className="px-4 py-3 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-200 font-medium"
+                className="px-4 py-3 text-lg text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-200 font-semibold"
 +                onClick={() => setIsMenuOpen(false)}
 +              >
 +                Shop
 +              </Link>
 +              <Link 
 +                to="/about" 
-+                className="px-4 py-3 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-200 font-medium"
+                className="px-4 py-3 text-lg text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-200 font-semibold"
 +                onClick={() => setIsMenuOpen(false)}
 +              >
 +                About us
 +              </Link>
 +              <Link 
 +                to="/services" 
-+                className="px-4 py-3 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-200 font-medium"
+                className="px-4 py-3 text-lg text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-200 font-semibold"
 +                onClick={() => setIsMenuOpen(false)}
 +              >
 +                Services
 +              </Link>
 +              <Link 
 +                to="/blog" 
-+                className="px-4 py-3 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-200 font-medium"
+                className="px-4 py-3 text-lg text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-200 font-semibold"
 +                onClick={() => setIsMenuOpen(false)}
 +              >
 +                Blog
 +              </Link>
 +              <Link 
 +                to="/contact" 
-+                className="px-4 py-3 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-200 font-medium"
+                className="px-4 py-3 text-lg text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-200 font-semibold"
 +                onClick={() => setIsMenuOpen(false)}
 +              >
 +                Contact us
