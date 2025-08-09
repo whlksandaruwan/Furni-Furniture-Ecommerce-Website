@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 // Mock API service - no backend required
->>>>>>> 2ab2b9c064dfe17e5da62c46fc5b61f71d9fcb34
 const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
 const api = {
