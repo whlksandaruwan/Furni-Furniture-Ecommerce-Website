@@ -1,4 +1,6 @@
 import React from 'react';
+import { Header } from '../../../components/Header';
+import { Footer } from '../../../components/Footer';
 import { Button } from '../../../components/ui/button';
 import { Badge } from '../../../components/ui/badge';
 import { Users, Award, Target, Heart, CheckCircle, Star } from 'lucide-react';
@@ -58,6 +60,7 @@ const team = [
 export function AboutUs() {
   return (
     <div className="min-h-screen bg-white">
+      <Header />
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-emerald-50 to-teal-50 py-24">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
@@ -194,6 +197,7 @@ export function AboutUs() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
+import { Header } from '../../../components/Header';
+import { Footer } from '../../../components/Footer';
 import { productsService } from '../../services/products.service';
 import { ProductCard } from './ProductCard';
 import { Button } from '../../../components/ui/button';
@@ -47,7 +49,9 @@ export function ProductsList() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12">
+    <div className="min-h-screen bg-white">
+      <Header />
+      <div className="bg-gray-50 py-12">
       <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
         {/* Header */}
         <div className="mb-10">
@@ -132,6 +136,8 @@ export function ProductsList() {
           </div>
         )}
       </div>
+      </div>
+      <Footer />
     </div>
   );
 }
