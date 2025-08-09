@@ -134,4 +134,4 @@ export function ProductsList() {
       </div>
     </div>
   );
-} 
+}
