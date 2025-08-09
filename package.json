@@ -1,0 +1,22 @@
+{
+  "name": "furni-furniture-ecommerce-frontend",
+  "version": "1.0.0",
+  "description": "A modern furniture ecommerce website frontend demo",
+  "type": "module",
+  "scripts": {
+    "dev": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "preview": "cd frontend && npm run preview",
+    "lint": "cd frontend && npm run lint"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "ecommerce",
+    "furniture",
+    "frontend",
+    "demo"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
