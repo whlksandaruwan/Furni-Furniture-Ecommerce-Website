@@ -15,7 +15,7 @@ import { ProtectedRoute } from './src/components/auth/ProtectedRoute';
 import { ProductsList } from './src/components/products/ProductsList';
 import { AdminDashboard } from './src/components/admin/AdminDashboard';
 import { AboutUs } from './src/components/pages/AboutUs';
-import { Services } from './src/components/pages/Services';
+import { Services as ServicesPage } from './src/components/pages/Services';
 import { Blog } from './src/components/pages/Blog';
 import { ContactUs } from './src/components/pages/ContactUs';
 
@@ -48,7 +48,7 @@ export default function App() {
             <Route path="/signup" element={<Signup />} />
             <Route path="/products" element={<ProductsList />} />
             <Route path="/about" element={<AboutUs />} />
-            <Route path="/services" element={<Services />} />
+            <Route path="/services" element={<ServicesPage />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<ContactUs />} />
             <Route 
