@@ -101,12 +101,12 @@ export function Blog() {
       <section className="bg-gradient-to-r from-emerald-50 to-teal-50 py-24">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center">
-            <Badge className="bg-emerald-100 text-emerald-800 mb-4">Our Blog</Badge>
+            <Badge className="bg-emerald-100 text-emerald-800 mb-4 text-lg px-4 py-2">Our Blog</Badge>
             <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
               Design Inspiration &
               <span className="text-emerald-600"> Expert Tips</span>
             </h1>
-            <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto mb-8">
+            <p className="text-2xl text-gray-600 leading-relaxed max-w-3xl mx-auto mb-8">
               Stay updated with the latest trends, tips, and insights from our furniture and design experts.
             </p>
             
@@ -131,8 +131,8 @@ export function Blog() {
       <section className="py-20 bg-white">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
           <div className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-2">Featured Article</h2>
-            <p className="text-gray-600">Our latest and most popular content</p>
+            <h2 className="text-4xl font-bold text-gray-900 mb-2">Featured Article</h2>
+            <p className="text-lg text-gray-600">Our latest and most popular content</p>
           </div>
 
           <div className="bg-gray-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
@@ -145,16 +145,16 @@ export function Blog() {
                 />
               </div>
               <div className="p-8 lg:p-12 flex flex-col justify-center">
-                <Badge className="bg-emerald-100 text-emerald-800 w-fit mb-4">
+                <Badge className="bg-emerald-100 text-emerald-800 w-fit mb-4 text-lg px-4 py-2">
                   {featuredPost.category}
                 </Badge>
-                <h3 className="text-3xl font-bold text-gray-900 mb-4 leading-tight">
+                <h3 className="text-4xl font-bold text-gray-900 mb-4 leading-tight">
                   {featuredPost.title}
                 </h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">
+                <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                   {featuredPost.excerpt}
                 </p>
-                <div className="flex items-center text-sm text-gray-500 mb-6">
+                <div className="flex items-center text-base text-gray-500 mb-6">
                   <User className="w-4 h-4 mr-2" />
                   <span className="mr-4">{featuredPost.author}</span>
                   <Calendar className="w-4 h-4 mr-2" />
@@ -162,7 +162,7 @@ export function Blog() {
                   <Clock className="w-4 h-4 mr-2" />
                   <span>{featuredPost.readTime}</span>
                 </div>
-                <Button className="bg-emerald-600 hover:bg-emerald-700 w-fit">
+                <Button className="bg-emerald-600 hover:bg-emerald-700 w-fit text-lg px-8 py-4">
                   Read Article
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
@@ -195,8 +195,8 @@ export function Blog() {
       <section className="py-20 bg-white">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
           <div className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-2">Latest Articles</h2>
-            <p className="text-gray-600">Discover insights, tips, and inspiration for your home</p>
+            <h2 className="text-4xl font-bold text-gray-900 mb-2">Latest Articles</h2>
+            <p className="text-lg text-gray-600">Discover insights, tips, and inspiration for your home</p>
           </div>
 
           {filteredPosts.length > 0 ? (
@@ -211,26 +211,26 @@ export function Blog() {
                     />
                   </div>
                   <div className="p-6">
-                    <Badge className="bg-emerald-100 text-emerald-800 mb-3">
+                    <Badge className="bg-emerald-100 text-emerald-800 mb-3 text-base px-3 py-1">
                       {post.category}
                     </Badge>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3 leading-tight">
+                    <h3 className="text-2xl font-semibold text-gray-900 mb-3 leading-tight">
                       {post.title}
                     </h3>
-                    <p className="text-gray-600 mb-4 leading-relaxed">
+                    <p className="text-lg text-gray-600 mb-4 leading-relaxed">
                       {post.excerpt}
                     </p>
-                    <div className="flex items-center text-sm text-gray-500 mb-4">
+                    <div className="flex items-center text-base text-gray-500 mb-4">
                       <User className="w-4 h-4 mr-2" />
                       <span className="mr-4">{post.author}</span>
                       <Clock className="w-4 h-4 mr-2" />
                       <span>{post.readTime}</span>
                     </div>
                     <div className="flex items-center justify-between">
-                      <span className="text-sm text-gray-500">
+                      <span className="text-base text-gray-500">
                         {new Date(post.date).toLocaleDateString()}
                       </span>
-                      <Button variant="ghost" size="sm" className="text-emerald-600 hover:text-emerald-700">
+                      <Button variant="ghost" size="sm" className="text-emerald-600 hover:text-emerald-700 text-base">
                         Read More
                         <ArrowRight className="w-4 h-4 ml-1" />
                       </Button>
@@ -260,10 +260,10 @@ export function Blog() {
       {/* Newsletter Section */}
       <section className="py-20 bg-gradient-to-r from-emerald-600 to-teal-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
+          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
             Never Miss an Update
           </h2>
-          <p className="text-xl text-emerald-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-2xl text-emerald-100 mb-8 max-w-2xl mx-auto">
             Subscribe to our newsletter and get the latest design tips, trends, and exclusive content delivered to your inbox.
           </p>
           <div className="max-w-md mx-auto">
@@ -275,7 +275,7 @@ export function Blog() {
               />
               <Button 
                 size="lg" 
-                className="bg-white text-emerald-600 hover:bg-gray-50 font-semibold h-12 px-8"
+                className="bg-white text-emerald-600 hover:bg-gray-50 font-semibold h-12 px-8 text-lg"
               >
                 Subscribe
               </Button>

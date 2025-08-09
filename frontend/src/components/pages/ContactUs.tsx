@@ -136,12 +136,12 @@ export function ContactUs() {
       <section className="bg-gradient-to-r from-emerald-50 to-teal-50 py-24">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center">
-            <Badge className="bg-emerald-100 text-emerald-800 mb-4">Contact Us</Badge>
+            <Badge className="bg-emerald-100 text-emerald-800 mb-4 text-lg px-4 py-2">Contact Us</Badge>
             <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
               Get in
               <span className="text-emerald-600"> Touch</span>
             </h1>
-            <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-2xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
               Have questions about our furniture or need design advice? We're here to help you create the perfect space.
             </p>
           </div>
@@ -157,13 +157,13 @@ export function ContactUs() {
                 <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
                   <info.icon className="w-8 h-8 text-emerald-600" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">{info.title}</h3>
+                <h3 className="text-2xl font-semibold text-gray-900 mb-4">{info.title}</h3>
                 <div className="space-y-2 mb-6">
                   {info.details.map((detail, detailIndex) => (
-                    <p key={detailIndex} className="text-gray-600">{detail}</p>
+                    <p key={detailIndex} className="text-lg text-gray-600">{detail}</p>
                   ))}
                 </div>
-                <Button variant="outline" size="sm" className="text-emerald-600 border-emerald-600 hover:bg-emerald-50">
+                <Button variant="outline" size="sm" className="text-emerald-600 border-emerald-600 hover:bg-emerald-50 text-base px-6 py-3">
                   {info.action}
                 </Button>
               </div>
@@ -179,13 +179,13 @@ export function ContactUs() {
             {/* Contact Form */}
             <div className="lg:col-span-2">
               <div className="bg-white p-8 lg:p-12 rounded-2xl shadow-sm">
-                <h2 className="text-3xl font-bold text-gray-900 mb-2">Send us a Message</h2>
-                <p className="text-gray-600 mb-8">Fill out the form below and we'll get back to you as soon as possible.</p>
+                <h2 className="text-4xl font-bold text-gray-900 mb-2">Send us a Message</h2>
+                <p className="text-lg text-gray-600 mb-8">Fill out the form below and we'll get back to you as soon as possible.</p>
 
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
-                      <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">
+                      <label htmlFor="firstName" className="block text-base font-medium text-gray-700 mb-2">
                         First Name *
                       </label>
                       <Input
@@ -199,7 +199,7 @@ export function ContactUs() {
                       />
                     </div>
                     <div>
-                      <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-2">
+                      <label htmlFor="lastName" className="block text-base font-medium text-gray-700 mb-2">
                         Last Name *
                       </label>
                       <Input
@@ -216,7 +216,7 @@ export function ContactUs() {
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                      <label htmlFor="email" className="block text-base font-medium text-gray-700 mb-2">
                         Email Address *
                       </label>
                       <Input
@@ -230,7 +230,7 @@ export function ContactUs() {
                       />
                     </div>
                     <div>
-                      <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                      <label htmlFor="phone" className="block text-base font-medium text-gray-700 mb-2">
                         Phone Number
                       </label>
                       <Input
@@ -262,7 +262,7 @@ export function ContactUs() {
                   </div>
 
                   <div>
-                    <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="subject" className="block text-base font-medium text-gray-700 mb-2">
                       Subject *
                     </label>
                     <Input
@@ -278,7 +278,7 @@ export function ContactUs() {
                   </div>
 
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="message" className="block text-base font-medium text-gray-700 mb-2">
                       Message *
                     </label>
                     <Textarea
@@ -296,7 +296,7 @@ export function ContactUs() {
                   <Button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-emerald-600 hover:bg-emerald-700 h-12"
+                    className="w-full bg-emerald-600 hover:bg-emerald-700 h-12 text-lg"
                   >
                     {isSubmitting ? (
                       <>
@@ -317,7 +317,7 @@ export function ContactUs() {
             {/* Departments Sidebar */}
             <div className="space-y-6">
               <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Choose Your Department</h3>
+                <h3 className="text-3xl font-bold text-gray-900 mb-6">Choose Your Department</h3>
                 <div className="space-y-4">
                   {departments.map((dept, index) => (
                     <div key={index} className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
@@ -326,11 +326,11 @@ export function ContactUs() {
                           <dept.icon className="w-6 h-6 text-emerald-600" />
                         </div>
                         <div>
-                          <h4 className="font-semibold text-gray-900 mb-2">{dept.title}</h4>
-                          <p className="text-sm text-gray-600 mb-3">{dept.description}</p>
+                          <h4 className="text-lg font-semibold text-gray-900 mb-2">{dept.title}</h4>
+                          <p className="text-base text-gray-600 mb-3">{dept.description}</p>
                           <a 
                             href={`mailto:${dept.email}`}
-                            className="text-sm text-emerald-600 hover:text-emerald-700 font-medium"
+                            className="text-base text-emerald-600 hover:text-emerald-700 font-medium"
                           >
                             {dept.email}
                           </a>
@@ -343,11 +343,11 @@ export function ContactUs() {
 
               {/* FAQ Link */}
               <div className="bg-emerald-50 p-6 rounded-xl">
-                <h4 className="font-semibold text-gray-900 mb-2">Need Quick Answers?</h4>
-                <p className="text-sm text-gray-600 mb-4">
+                <h4 className="text-lg font-semibold text-gray-900 mb-2">Need Quick Answers?</h4>
+                <p className="text-base text-gray-600 mb-4">
                   Check out our FAQ section for instant answers to common questions.
                 </p>
-                <Button variant="outline" size="sm" className="text-emerald-600 border-emerald-600 hover:bg-emerald-100">
+                <Button variant="outline" size="sm" className="text-emerald-600 border-emerald-600 hover:bg-emerald-100 text-base px-6 py-3">
                   View FAQ
                 </Button>
               </div>
@@ -360,8 +360,8 @@ export function ContactUs() {
       <section className="py-20 bg-white">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Visit Our Showroom</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Visit Our Showroom</h2>
+            <p className="text-2xl text-gray-600 max-w-3xl mx-auto">
               Experience our furniture in person at our beautiful showroom in the heart of the design district.
             </p>
           </div>
@@ -369,8 +369,8 @@ export function ContactUs() {
           <div className="bg-gray-200 rounded-2xl h-96 flex items-center justify-center">
             <div className="text-center">
               <MapPin className="w-12 h-12 text-gray-400 mx-auto mb-4" />
-              <p className="text-gray-600">Interactive map would be integrated here</p>
-              <p className="text-sm text-gray-500 mt-2">123 Furniture Street, Design District, NY 10001</p>
+              <p className="text-lg text-gray-600">Interactive map would be integrated here</p>
+              <p className="text-base text-gray-500 mt-2">123 Furniture Street, Design District, NY 10001</p>
             </div>
           </div>
         </div>

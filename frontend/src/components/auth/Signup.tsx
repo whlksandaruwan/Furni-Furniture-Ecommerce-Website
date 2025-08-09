@@ -80,6 +80,11 @@ export function Signup() {
           <Link to="/login" className="font-medium text-emerald-600 hover:text-emerald-500">
             sign in to your existing account
           </Link>
+          <div className="mt-4 p-4 bg-green-50 border border-green-200 rounded-lg">
+            <p className="text-sm text-green-800">
+              <strong>Note:</strong> This is a demo. You can create an account with any email and it will work locally.
+            </p>
+          </div>
         </p>
       </div>
 

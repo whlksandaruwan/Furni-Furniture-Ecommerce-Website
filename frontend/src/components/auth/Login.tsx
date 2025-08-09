@@ -38,6 +38,13 @@ export function Login() {
           <Link to="/signup" className="font-medium text-emerald-600 hover:text-emerald-500">
             create a new account
           </Link>
+          <div className="mt-4 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+            <p className="text-sm text-blue-800 font-medium mb-2">Demo Accounts:</p>
+            <div className="text-xs text-blue-700 space-y-1">
+              <p><strong>Admin:</strong> admin@furni.com / admin123</p>
+              <p><strong>User:</strong> user@furni.com / user123</p>
+            </div>
+          </div>
         </p>
       </div>
 
