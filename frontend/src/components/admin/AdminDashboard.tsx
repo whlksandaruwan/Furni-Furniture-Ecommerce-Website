@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
+import { Header } from '../../../components/Header';
+import { Footer } from '../../../components/Footer';
 import { Button } from '../../../components/ui/button';
 import { Badge } from '../../../components/ui/badge';
 import { 
@@ -40,7 +42,9 @@ export function AdminDashboard() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-white">
+      <Header />
+      <div className="bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Header */}
         <div className="mb-8">
@@ -249,6 +253,8 @@ export function AdminDashboard() {
           </div>
         </div>
       </div>
+      </div>
+      <Footer />
     </div>
   );
 } 
