@@ -26,11 +26,13 @@ export function Hero() {
           </div>
           
           <div className="relative">
-            <ImageWithFallback
-              src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-              alt="Modern chair"
-              className="w-full h-auto rounded-2xl shadow-2xl"
-            />
+            <div className="relative overflow-hidden rounded-2xl shadow-2xl aspect-square">
+              <ImageWithFallback
+                src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                alt="Modern chair"
+                className="w-full h-full object-cover"
+              />
+            </div>
             <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg">
               <div className="flex items-center space-x-3">
                 <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center">

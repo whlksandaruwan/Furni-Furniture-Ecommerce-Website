@@ -21,12 +21,12 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <Link to="/" className="text-gray-700 hover:text-primary transition-colors">Home</Link>
-            <Link to="/products" className="text-gray-700 hover:text-primary transition-colors">Shop</Link>
-            <Link to="/about" className="text-gray-700 hover:text-primary transition-colors">About us</Link>
-            <Link to="/services" className="text-gray-700 hover:text-primary transition-colors">Services</Link>
-            <Link to="/blog" className="text-gray-700 hover:text-primary transition-colors">Blog</Link>
-            <Link to="/contact" className="text-gray-700 hover:text-primary transition-colors">Contact us</Link>
+            <Link to="/" className="text-lg text-gray-700 hover:text-primary transition-colors">Home</Link>
+            <Link to="/products" className="text-lg text-gray-700 hover:text-primary transition-colors">Shop</Link>
+            <Link to="/about" className="text-lg text-gray-700 hover:text-primary transition-colors">About us</Link>
+            <Link to="/services" className="text-lg text-gray-700 hover:text-primary transition-colors">Services</Link>
+            <Link to="/blog" className="text-lg text-gray-700 hover:text-primary transition-colors">Blog</Link>
+            <Link to="/contact" className="text-lg text-gray-700 hover:text-primary transition-colors">Contact us</Link>
           </nav>
 
           {/* Search and Cart */}
@@ -87,12 +87,12 @@ export function Header() {
         {isMenuOpen && (
           <div className="md:hidden border-t border-gray-200 py-4">
             <nav className="flex flex-col space-y-4">
-              <Link to="/" className="text-gray-700 hover:text-primary transition-colors">Home</Link>
-              <Link to="/products" className="text-gray-700 hover:text-primary transition-colors">Shop</Link>
-              <Link to="/about" className="text-gray-700 hover:text-primary transition-colors">About us</Link>
-              <Link to="/services" className="text-gray-700 hover:text-primary transition-colors">Services</Link>
-              <Link to="/blog" className="text-gray-700 hover:text-primary transition-colors">Blog</Link>
-              <Link to="/contact" className="text-gray-700 hover:text-primary transition-colors">Contact us</Link>
+              <Link to="/" className="text-lg text-gray-700 hover:text-primary transition-colors">Home</Link>
+              <Link to="/products" className="text-lg text-gray-700 hover:text-primary transition-colors">Shop</Link>
+              <Link to="/about" className="text-lg text-gray-700 hover:text-primary transition-colors">About us</Link>
+              <Link to="/services" className="text-lg text-gray-700 hover:text-primary transition-colors">Services</Link>
+              <Link to="/blog" className="text-lg text-gray-700 hover:text-primary transition-colors">Blog</Link>
+              <Link to="/contact" className="text-lg text-gray-700 hover:text-primary transition-colors">Contact us</Link>
             </nav>
           </div>
         )}
