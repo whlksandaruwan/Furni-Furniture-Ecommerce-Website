@@ -6,6 +6,7 @@
  import { useState } from 'react';
 @@ .. @@
    return (
+   )
 -    <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
 +    <header className="bg-white/95 backdrop-blur-md border-b border-gray-200 sticky top-0 z-50 shadow-sm">
        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
@@ -64,6 +65,9 @@
 @@ -65,25 +80,25 @@ export function Header() {
              {/* Auth buttons */}
              {isAuthenticated ? (
+             )
+             }
+}
 -              <div className="flex items-center space-x-2">
 +              <div className="flex items-center space-x-1">
                  {isAdmin && (
@@ -105,6 +109,8 @@
              <Button 
                variant="ghost" 
                size="icon" 
+)
+}
 -              className="md:hidden"
 +              className="lg:hidden hover:bg-emerald-50 hover:text-emerald-600"
                onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -113,6 +119,8 @@
 @@ .. @@
          {/* Mobile Navigation */}
          {isMenuOpen && (
+             )
+             }
 -          <div className="md:hidden border-t border-gray-200 py-4">
 -            <nav className="flex flex-col space-y-4">
 -              <Link to="/" className="text-gray-700 hover:text-primary transition-colors">Home</Link>
