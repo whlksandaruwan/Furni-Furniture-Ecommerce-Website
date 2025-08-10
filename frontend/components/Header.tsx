@@ -16,17 +16,17 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-primary">Furni.</h1>
+            <h1 className="text-3xl font-bold text-primary">Furni.</h1>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <Link to="/" className="text-lg text-gray-700 hover:text-primary transition-colors">Home</Link>
-            <Link to="/products" className="text-lg text-gray-700 hover:text-primary transition-colors">Shop</Link>
-            <Link to="/about" className="text-lg text-gray-700 hover:text-primary transition-colors">About us</Link>
-            <Link to="/services" className="text-lg text-gray-700 hover:text-primary transition-colors">Services</Link>
-            <Link to="/blog" className="text-lg text-gray-700 hover:text-primary transition-colors">Blog</Link>
-            <Link to="/contact" className="text-lg text-gray-700 hover:text-primary transition-colors">Contact us</Link>
+            <Link to="/" className="text-xl text-gray-700 hover:text-primary transition-colors font-medium">Home</Link>
+            <Link to="/products" className="text-xl text-gray-700 hover:text-primary transition-colors font-medium">Shop</Link>
+            <Link to="/about" className="text-xl text-gray-700 hover:text-primary transition-colors font-medium">About us</Link>
+            <Link to="/services" className="text-xl text-gray-700 hover:text-primary transition-colors font-medium">Services</Link>
+            <Link to="/blog" className="text-xl text-gray-700 hover:text-primary transition-colors font-medium">Blog</Link>
+            <Link to="/contact" className="text-xl text-gray-700 hover:text-primary transition-colors font-medium">Contact us</Link>
           </nav>
 
           {/* Search and Cart */}
@@ -59,12 +59,12 @@ export function Header() {
             ) : (
               <div className="flex items-center space-x-2">
                 <Link to="/login">
-                  <Button variant="outline" size="sm">
+                  <Button variant="outline" size="default" className="text-base">
                     Sign In
                   </Button>
                 </Link>
                 <Link to="/signup">
-                  <Button size="sm">
+                  <Button size="default" className="text-base">
                     Sign Up
                   </Button>
                 </Link>
@@ -87,12 +87,12 @@ export function Header() {
         {isMenuOpen && (
           <div className="md:hidden border-t border-gray-200 py-4">
             <nav className="flex flex-col space-y-4">
-              <Link to="/" className="text-lg text-gray-700 hover:text-primary transition-colors">Home</Link>
-              <Link to="/products" className="text-lg text-gray-700 hover:text-primary transition-colors">Shop</Link>
-              <Link to="/about" className="text-lg text-gray-700 hover:text-primary transition-colors">About us</Link>
-              <Link to="/services" className="text-lg text-gray-700 hover:text-primary transition-colors">Services</Link>
-              <Link to="/blog" className="text-lg text-gray-700 hover:text-primary transition-colors">Blog</Link>
-              <Link to="/contact" className="text-lg text-gray-700 hover:text-primary transition-colors">Contact us</Link>
+              <Link to="/" className="text-xl text-gray-700 hover:text-primary transition-colors font-medium">Home</Link>
+              <Link to="/products" className="text-xl text-gray-700 hover:text-primary transition-colors font-medium">Shop</Link>
+              <Link to="/about" className="text-xl text-gray-700 hover:text-primary transition-colors font-medium">About us</Link>
+              <Link to="/services" className="text-xl text-gray-700 hover:text-primary transition-colors font-medium">Services</Link>
+              <Link to="/blog" className="text-xl text-gray-700 hover:text-primary transition-colors font-medium">Blog</Link>
+              <Link to="/contact" className="text-xl text-gray-700 hover:text-primary transition-colors font-medium">Contact us</Link>
             </nav>
           </div>
         )}
