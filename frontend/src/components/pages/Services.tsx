@@ -102,19 +102,19 @@ export function Services() {
     <div className="min-h-screen bg-white">
       <Header />
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-sage-50 to-primary-50 py-24 animate-in fade-in duration-1000">
+      <section className="bg-gradient-to-r from-emerald-50 to-teal-50 py-24">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center">
-            <Badge className="bg-primary-100 text-primary-800 mb-4 text-lg px-4 py-2 animate-in slide-in-from-bottom-4 duration-700 delay-200">Our Services</Badge>
-            <h1 className="text-5xl lg:text-6xl font-bold text-sage-800 leading-tight mb-6 animate-in slide-in-from-bottom-4 duration-700 delay-400">
+            <Badge className="bg-emerald-100 text-emerald-800 mb-4 text-lg px-4 py-2">Our Services</Badge>
+            <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
               Complete Furniture
-              <span className="text-primary-500"> Solutions</span>
+              <span className="text-emerald-600"> Solutions</span>
             </h1>
-            <p className="text-2xl text-sage-600 leading-relaxed max-w-3xl mx-auto mb-8 animate-in slide-in-from-bottom-4 duration-700 delay-600">
+            <p className="text-2xl text-gray-600 leading-relaxed max-w-3xl mx-auto mb-8">
               From design consultation to delivery and assembly, we provide end-to-end furniture solutions 
               to make your home beautiful and functional.
             </p>
-            <Button size="lg" className="bg-primary-500 hover:bg-primary-600 text-lg px-8 py-4 transform hover:scale-105 transition-all duration-300 animate-in slide-in-from-bottom-4 duration-700 delay-800">
+            <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-lg px-8 py-4">
               Get Started
             </Button>
           </div>
@@ -125,34 +125,34 @@ export function Services() {
       <section className="py-20 bg-white">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold text-sage-800 mb-4 animate-in slide-in-from-bottom-4 duration-700">Premium Services</h2>
-            <p className="text-2xl text-sage-600 max-w-3xl mx-auto animate-in slide-in-from-bottom-4 duration-700 delay-200">
+            <h2 className="text-5xl font-bold text-gray-900 mb-4">Premium Services</h2>
+            <p className="text-2xl text-gray-600 max-w-3xl mx-auto">
               Our comprehensive services ensure you get the perfect furniture experience from start to finish
             </p>
           </div>
 
           <div className="space-y-20">
             {mainServices.map((service, index) => (
-              <div key={index} className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center animate-in slide-in-from-bottom-8 duration-700 ${
+              <div key={index} className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
                 index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''
-              }`} style={{ animationDelay: `${index * 300}ms` }}>
+              }`}>
                 <div className={`space-y-6 ${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
-                  <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center">
-                    <service.icon className="w-8 h-8 text-primary-500" />
+                  <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center">
+                    <service.icon className="w-8 h-8 text-emerald-600" />
                   </div>
                   <div>
-                    <h3 className="text-4xl font-bold text-sage-800 mb-4">{service.title}</h3>
-                    <p className="text-2xl text-sage-600 mb-6">{service.description}</p>
+                    <h3 className="text-4xl font-bold text-gray-900 mb-4">{service.title}</h3>
+                    <p className="text-2xl text-gray-600 mb-6">{service.description}</p>
                     <ul className="space-y-3">
                       {service.features.map((feature, featureIndex) => (
                         <li key={featureIndex} className="flex items-center">
-                          <CheckCircle className="w-5 h-5 text-primary-500 mr-3" />
-                          <span className="text-lg text-sage-700">{feature}</span>
+                          <CheckCircle className="w-5 h-5 text-emerald-600 mr-3" />
+                          <span className="text-lg text-gray-700">{feature}</span>
                         </li>
                       ))}
                     </ul>
                   </div>
-                  <Button className="bg-primary-500 hover:bg-primary-600 text-lg px-8 py-4 transform hover:scale-105 transition-all duration-300">
+                  <Button className="bg-emerald-600 hover:bg-emerald-700 text-lg px-8 py-4">
                     Learn More
                   </Button>
                 </div>
@@ -160,7 +160,7 @@ export function Services() {
                   <ImageWithFallback
                     src={service.image}
                     alt={service.title}
-                    className="w-full h-auto rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-500"
+                    className="w-full h-auto rounded-2xl shadow-lg"
                   />
                 </div>
               </div>
@@ -173,20 +173,20 @@ export function Services() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold text-sage-800 mb-4 animate-in slide-in-from-bottom-4 duration-700">Why Choose Furni?</h2>
-            <p className="text-2xl text-sage-600 max-w-3xl mx-auto animate-in slide-in-from-bottom-4 duration-700 delay-200">
+            <h2 className="text-5xl font-bold text-gray-900 mb-4">Why Choose Furni?</h2>
+            <p className="text-2xl text-gray-600 max-w-3xl mx-auto">
               We go above and beyond to ensure your complete satisfaction
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {supportServices.map((service, index) => (
-              <div key={index} className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-2 animate-in slide-in-from-bottom-4 duration-700" style={{ animationDelay: `${index * 150}ms` }}>
-                <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mb-6">
-                  <service.icon className="w-8 h-8 text-primary-500" />
+              <div key={index} className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300">
+                <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mb-6">
+                  <service.icon className="w-8 h-8 text-emerald-600" />
                 </div>
-                <h3 className="text-2xl font-semibold text-sage-800 mb-4">{service.title}</h3>
-                <p className="text-lg text-sage-600 leading-relaxed">{service.description}</p>
+                <h3 className="text-2xl font-semibold text-gray-900 mb-4">{service.title}</h3>
+                <p className="text-lg text-gray-600 leading-relaxed">{service.description}</p>
               </div>
             ))}
           </div>
@@ -197,20 +197,20 @@ export function Services() {
       <section className="py-20 bg-white">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold text-sage-800 mb-4 animate-in slide-in-from-bottom-4 duration-700">Our Process</h2>
-            <p className="text-2xl text-sage-600 max-w-3xl mx-auto animate-in slide-in-from-bottom-4 duration-700 delay-200">
+            <h2 className="text-5xl font-bold text-gray-900 mb-4">Our Process</h2>
+            <p className="text-2xl text-gray-600 max-w-3xl mx-auto">
               Simple, transparent, and designed around your needs
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {process.map((step, index) => (
-              <div key={index} className="text-center animate-in slide-in-from-bottom-4 duration-700" style={{ animationDelay: `${index * 200}ms` }}>
-                <div className="w-20 h-20 bg-primary-500 text-white rounded-full flex items-center justify-center text-2xl font-bold mb-6 mx-auto hover:scale-110 transition-transform duration-300">
+              <div key={index} className="text-center">
+                <div className="w-20 h-20 bg-emerald-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mb-6 mx-auto">
                   {step.step}
                 </div>
-                <h3 className="text-2xl font-semibold text-sage-800 mb-4">{step.title}</h3>
-                <p className="text-lg text-sage-600 leading-relaxed">{step.description}</p>
+                <h3 className="text-2xl font-semibold text-gray-900 mb-4">{step.title}</h3>
+                <p className="text-lg text-gray-600 leading-relaxed">{step.description}</p>
               </div>
             ))}
           </div>
@@ -218,19 +218,19 @@ export function Services() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-primary-500 to-sage-600 animate-in fade-in duration-1000">
+      <section className="py-20 bg-gradient-to-r from-emerald-600 to-teal-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4 animate-in slide-in-from-bottom-4 duration-700">
+          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
             Ready to Get Started?
           </h2>
-          <p className="text-2xl text-white/90 mb-8 max-w-2xl mx-auto animate-in slide-in-from-bottom-4 duration-700 delay-200">
+          <p className="text-2xl text-emerald-100 mb-8 max-w-2xl mx-auto">
             Contact us today for a free consultation and let us help you create the perfect space.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-in slide-in-from-bottom-4 duration-700 delay-400">
-            <Button size="lg" className="bg-white text-primary-500 hover:bg-gray-50 text-lg px-8 py-4 transform hover:scale-105 transition-all duration-300">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" className="bg-white text-emerald-600 hover:bg-gray-50 text-lg px-8 py-4">
               Schedule Consultation
             </Button>
-            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4 transform hover:scale-105 transition-all duration-300">
+            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-emerald-600 text-lg px-8 py-4">
               Call Us Now
             </Button>
           </div>

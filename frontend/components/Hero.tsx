@@ -37,34 +37,34 @@ export function Hero() {
   }, []);
 
   return (
-    <section className="bg-gradient-to-r from-sage-50 to-primary-50 py-24 animate-in fade-in duration-1000">
+    <section className="bg-gradient-to-r from-emerald-50 to-teal-50 py-24">
       <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8 animate-in slide-in-from-left-8 duration-1000 delay-300">
-            <h1 className="text-6xl lg:text-7xl font-bold text-sage-800 leading-tight">
+          <div className="space-y-8">
+            <h1 className="text-6xl lg:text-7xl font-bold text-navyBlue-500 leading-tight">
               Modern Interior
-              <span className="text-primary-500"> Design Studio</span>
+              <span className="text-emerald-600"> Design Studio</span>
             </h1>
-            <p className="text-xl text-sage-600 leading-relaxed">
+            <p className="text-xl text-navyBlue-400 leading-relaxed">
               Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. 
               Aliquam vulputate velit imperdiet dolor tempor tristique.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-primary-500 hover:bg-primary-600 text-white text-lg px-8 py-4 transform hover:scale-105 transition-all duration-300">
+              <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-white text-lg px-8 py-4">
                 Shop Now
               </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-primary-500 text-primary-500 hover:bg-primary-50 transform hover:scale-105 transition-all duration-300">
+              <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-emerald-600 text-emerald-600 hover:bg-emerald-50">
                 Explore
               </Button>
             </div>
           </div>
           
-          <div className="relative animate-in slide-in-from-right-8 duration-1000 delay-500">
-            <div className="relative overflow-hidden rounded-2xl shadow-2xl w-full h-[600px] hover:shadow-3xl transition-shadow duration-500">
+          <div className="relative">
+            <div className="relative overflow-hidden rounded-2xl shadow-2xl w-full h-[600px]">
               <ImageWithFallback
                 src={heroSlides[currentSlide].image}
                 alt={heroSlides[currentSlide].title}
-                className="w-full h-full object-cover object-center transition-all duration-1000 ease-in-out hover:scale-105"
+                className="w-full h-full object-cover object-center transition-opacity duration-1000 ease-in-out"
               />
               
               {/* Slide indicators */}
@@ -75,7 +75,7 @@ export function Hero() {
                     onClick={() => setCurrentSlide(index)}
                     className={`w-3 h-3 rounded-full transition-all duration-300 ${
                       index === currentSlide 
-                        ? 'bg-white shadow-lg scale-125' 
+                        ? 'bg-white shadow-lg' 
                         : 'bg-white/50 hover:bg-white/75'
                     }`}
                   />
@@ -84,14 +84,14 @@ export function Hero() {
             </div>
             
             {/* Floating card with slide content */}
-            <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg transition-all duration-500 border border-primary-200 animate-in slide-in-from-bottom-4 duration-1000 delay-1000 hover:shadow-xl hover:-translate-y-1">
+            <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg transition-all duration-500 border border-emerald-200">
               <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center">
-                  <span className="text-primary-500 font-bold text-lg">✓</span>
+                <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center">
+                  <span className="text-emerald-600 font-bold text-lg">✓</span>
                 </div>
                 <div>
-                  <p className="font-semibold text-sage-800 text-lg">{heroSlides[currentSlide].title}</p>
-                  <p className="text-sm text-sage-600">{heroSlides[currentSlide].subtitle}</p>
+                  <p className="font-semibold text-navyBlue-500 text-lg">{heroSlides[currentSlide].title}</p>
+                  <p className="text-sm text-navyBlue-400">{heroSlides[currentSlide].subtitle}</p>
                 </div>
               </div>
             </div>
