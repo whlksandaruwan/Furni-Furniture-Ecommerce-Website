@@ -32,7 +32,7 @@ export function ProductCard({ product }: ProductCardProps) {
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-lg transition-shadow duration-300">
+    <div className="bg-white rounded-2xl shadow-sm overflow-hidden group hover:shadow-xl transition-all duration-300 border border-primary-200">
       <div className="relative aspect-square overflow-hidden">
         <img
           src={product.image}
@@ -43,10 +43,10 @@ export function ProductCard({ product }: ProductCardProps) {
         {/* Badges */}
         <div className="absolute top-4 left-4 flex flex-col gap-2">
           {product.isNew && (
-            <Badge className="bg-emerald-500 hover:bg-emerald-600">New</Badge>
+            <Badge className="bg-sage-500 hover:bg-sage-600 text-white">New</Badge>
           )}
           {product.isOnSale && (
-            <Badge variant="destructive">Sale</Badge>
+            <Badge className="bg-dustyPink-500 hover:bg-dustyPink-600 text-white">Sale</Badge>
           )}
         </div>
 
@@ -54,15 +54,15 @@ export function ProductCard({ product }: ProductCardProps) {
         <Button
           variant="ghost"
           size="icon"
-          className="absolute top-4 right-4 bg-white/80 hover:bg-white"
+          className="absolute top-4 right-4 bg-white/90 hover:bg-white shadow-sm"
         >
-          <Heart className="h-4 w-4" />
+          <Heart className="h-4 w-4 text-navyBlue-500" />
         </Button>
 
         {/* Quick add overlay */}
         <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
           <Button 
-            className="bg-white text-gray-900 hover:bg-gray-100"
+            className="bg-white text-navyBlue-500 hover:bg-primary-50 border border-primary-300 shadow-lg"
             onClick={handleAddToCart}
             disabled={addToCartMutation.isPending}
           >
@@ -72,7 +72,7 @@ export function ProductCard({ product }: ProductCardProps) {
       </div>
 
       <div className="p-4">
-        <h3 className="text-lg font-semibold text-gray-900 mb-2">{product.name}</h3>
+        <h3 className="text-lg font-semibold text-navyBlue-500 mb-2">{product.name}</h3>
         
         {/* Rating */}
         <div className="flex items-center gap-2 mb-3">
@@ -80,16 +80,17 @@ export function ProductCard({ product }: ProductCardProps) {
             <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
             <span className="text-sm font-medium">{product.rating}</span>
           </div>
-          <span className="text-sm text-gray-500">({product.reviewCount} reviews)</span>
+          <span className="text-sm text-navyBlue-400">({product.reviewCount} reviews)</span>
         </div>
 
         {/* Price */}
         <div className="flex items-center gap-2 mb-4">
           <span className="text-xl font-bold text-gray-900">
+          <span className="text-xl font-bold text-navyBlue-500">
             ${product.price.toFixed(2)}
           </span>
           {product.originalPrice && product.originalPrice > product.price && (
-            <span className="text-sm text-gray-500 line-through">
+            <span className="text-sm text-navyBlue-400 line-through">
               ${product.originalPrice.toFixed(2)}
             </span>
           )}
@@ -97,7 +98,7 @@ export function ProductCard({ product }: ProductCardProps) {
 
         {/* Add to cart button */}
         <Button 
-          className="w-full bg-emerald-600 hover:bg-emerald-700"
+          className="w-full bg-sage-500 hover:bg-sage-600 text-white"
           onClick={handleAddToCart}
           disabled={addToCartMutation.isPending}
         >

@@ -39,11 +39,11 @@ const products = [
 
 export function FeaturedProducts() {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-lightGray-100">
       <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Crafted with excellent material.</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <h2 className="text-4xl font-bold text-navyBlue-500 mb-4">Crafted with excellent material.</h2>
+          <p className="text-xl text-navyBlue-400 max-w-3xl mx-auto">
             Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.
           </p>
         </div>
@@ -61,10 +61,10 @@ export function FeaturedProducts() {
                 {/* Badges */}
                 <div className="absolute top-4 left-4 flex flex-col gap-2">
                   {product.isNew && (
-                    <Badge className="bg-sage-500 hover:bg-sage-600">New</Badge>
+                    <Badge className="bg-sage-500 hover:bg-sage-600 text-white">New</Badge>
                   )}
                   {product.isSale && (
-                    <Badge variant="destructive">Sale</Badge>
+                    <Badge className="bg-dustyPink-500 hover:bg-dustyPink-600 text-white">Sale</Badge>
                   )}
                 </div>
 
@@ -79,14 +79,14 @@ export function FeaturedProducts() {
 
                 {/* Quick add overlay */}
                 <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <Button className="bg-white text-gray-900 hover:bg-gray-100">
+                  <Button className="bg-white text-navyBlue-500 hover:bg-primary-50 border border-primary-300">
                     Quick Add
                   </Button>
                 </div>
               </div>
 
               <div className="p-6">
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">{product.name}</h3>
+                <h3 className="text-lg font-semibold text-navyBlue-500 mb-2">{product.name}</h3>
                 
                 {/* Rating */}
                 <div className="flex items-center gap-2 mb-3">
@@ -94,18 +94,18 @@ export function FeaturedProducts() {
                     <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                     <span className="text-sm font-medium">{product.rating}</span>
                   </div>
-                  <span className="text-sm text-gray-500">({product.reviews} reviews)</span>
+                  <span className="text-sm text-navyBlue-400">({product.reviews} reviews)</span>
                 </div>
 
                 {/* Price */}
                 <div className="flex items-center gap-2 mb-4">
-                  <span className="text-xl font-bold text-gray-900">${product.price.toFixed(2)}</span>
+                  <span className="text-xl font-bold text-navyBlue-500">${product.price.toFixed(2)}</span>
                   {product.originalPrice && (
-                    <span className="text-sm text-gray-500 line-through">${product.originalPrice.toFixed(2)}</span>
+                    <span className="text-sm text-navyBlue-400 line-through">${product.originalPrice.toFixed(2)}</span>
                   )}
                 </div>
 
-                <Button className="w-full bg-sage-500 hover:bg-sage-600">
+                <Button className="w-full bg-sage-500 hover:bg-sage-600 text-white">
                   Add to Cart
                 </Button>
               </div>

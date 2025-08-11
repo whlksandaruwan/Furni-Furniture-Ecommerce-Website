@@ -28,8 +28,8 @@ export function Categories() {
     <section className="py-20 bg-white">
       <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Shop by Category</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <h2 className="text-4xl font-bold text-navyBlue-500 mb-4">Shop by Category</h2>
+          <p className="text-xl text-navyBlue-400 max-w-3xl mx-auto">
             Discover our carefully curated collection of modern furniture pieces
           </p>
         </div>
@@ -38,7 +38,7 @@ export function Categories() {
           {categories.map((category, index) => (
             <div
               key={index}
-              className="group cursor-pointer bg-gray-50 rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300"
+              className="group cursor-pointer bg-primary-50 rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 border border-primary-200"
             >
               <div className="aspect-square overflow-hidden">
                 <ImageWithFallback
@@ -48,8 +48,8 @@ export function Categories() {
                 />
               </div>
               <div className="p-6 text-center">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">{category.name}</h3>
-                <p className="text-gray-600">{category.count}</p>
+                <h3 className="text-xl font-semibold text-navyBlue-500 mb-2">{category.name}</h3>
+                <p className="text-navyBlue-400">{category.count}</p>
               </div>
             </div>
           ))}

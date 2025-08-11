@@ -37,23 +37,23 @@ export function Hero() {
   }, []);
 
   return (
-    <section className="bg-gradient-to-r from-sage-100 to-sage-200 py-24">
+    <section className="bg-gradient-to-r from-primary-100 to-primary-200 py-24">
       <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
-            <h1 className="text-6xl lg:text-7xl font-bold text-gray-900 leading-tight">
+            <h1 className="text-6xl lg:text-7xl font-bold text-navyBlue-500 leading-tight">
               Modern Interior
               <span className="text-sage-500"> Design Studio</span>
             </h1>
-            <p className="text-xl text-gray-600 leading-relaxed">
+            <p className="text-xl text-navyBlue-400 leading-relaxed">
               Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. 
               Aliquam vulputate velit imperdiet dolor tempor tristique.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-sage-500 hover:bg-sage-600 text-lg px-8 py-4">
+              <Button size="lg" className="bg-sage-500 hover:bg-sage-600 text-white text-lg px-8 py-4">
                 Shop Now
               </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-4">
+              <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-sage-500 text-sage-500 hover:bg-sage-50">
                 Explore
               </Button>
             </div>
@@ -84,14 +84,14 @@ export function Hero() {
             </div>
             
             {/* Floating card with slide content */}
-            <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg transition-all duration-500">
+            <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg transition-all duration-500 border border-primary-200">
               <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 bg-sage-100 rounded-full flex items-center justify-center">
-                  <span className="text-sage-600 font-bold text-lg">✓</span>
+                <div className="w-12 h-12 bg-dustyPink-100 rounded-full flex items-center justify-center">
+                  <span className="text-dustyPink-500 font-bold text-lg">✓</span>
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-900 text-lg">{heroSlides[currentSlide].title}</p>
-                  <p className="text-sm text-gray-600">{heroSlides[currentSlide].subtitle}</p>
+                  <p className="font-semibold text-navyBlue-500 text-lg">{heroSlides[currentSlide].title}</p>
+                  <p className="text-sm text-navyBlue-400">{heroSlides[currentSlide].subtitle}</p>
                 </div>
               </div>
             </div>

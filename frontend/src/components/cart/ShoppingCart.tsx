@@ -128,6 +128,7 @@ export function ShoppingCart() {
                         <Button
                           variant="outline"
                           size="icon"
+                          className="border-primary-300 text-navyBlue-500 hover:bg-primary-100"
                           onClick={() => handleUpdateQuantity(item.id, item.quantity - 1)}
                           disabled={updateCartItemMutation.isPending}
                         >
@@ -137,6 +138,7 @@ export function ShoppingCart() {
                         <Button
                           variant="outline"
                           size="icon"
+                          className="border-primary-300 text-navyBlue-500 hover:bg-primary-100"
                           onClick={() => handleUpdateQuantity(item.id, item.quantity + 1)}
                           disabled={updateCartItemMutation.isPending}
                         >
@@ -145,6 +147,7 @@ export function ShoppingCart() {
                         <Button
                           variant="outline"
                           size="icon"
+                          className="border-dustyPink-300 text-dustyPink-500 hover:bg-dustyPink-50"
                           onClick={() => handleRemoveItem(item.id)}
                           disabled={removeFromCartMutation.isPending}
                         >
@@ -169,6 +172,7 @@ export function ShoppingCart() {
                   <span className="font-bold">${cart.total.toFixed(2)}</span>
                 </div>
                 <Button className="w-full" onClick={() => setIsOpen(false)}>
+                <Button className="w-full bg-sage-500 hover:bg-sage-600 text-white" onClick={() => setIsOpen(false)}>
                   Checkout
                 </Button>
               </div>
