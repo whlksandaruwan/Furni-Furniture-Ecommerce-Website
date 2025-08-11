@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
-import { Header } from '../../../components/Header';
-import { Footer } from '../../../components/Footer';
+import { Header } from '../../layout/Header';
+import { Footer } from '../../layout/Footer';
 import { Button } from '../../../components/ui/button';
 import { Badge } from '../../../components/ui/badge';
 import { 
@@ -15,7 +15,7 @@ import {
   Trash2,
   Eye
 } from 'lucide-react';
-import { useAuth } from '../../contexts/AuthContext';
+import { useAuth } from '../../../contexts/AuthContext';
 import { Navigate } from 'react-router-dom';
 
 interface DashboardStats {
