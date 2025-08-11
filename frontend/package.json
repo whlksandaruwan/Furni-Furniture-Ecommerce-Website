@@ -18,9 +18,5 @@
     "demo"
   ],
   "author": "Your Name",
-  "license": "MIT",
-  "dependencies": {
-    "@tanstack/react-query": "^5.84.2",
-    "lucide-react": "^0.539.0"
-  }
+  "license": "MIT"
 }
