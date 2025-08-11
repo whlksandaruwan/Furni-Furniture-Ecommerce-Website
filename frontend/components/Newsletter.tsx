@@ -8,7 +8,7 @@ export function Newsletter() {
         <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
           Subscribe to our Newsletter
         </h2>
-        <p className="text-xl text-sage-100 mb-8 max-w-2xl mx-auto">
+        <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
           Get updates on new products, special offers, and design inspiration delivered straight to your inbox.
         </p>
         
@@ -17,16 +17,16 @@ export function Newsletter() {
             <Input
               type="email"
               placeholder="Enter your email"
-              className="flex-1 h-12 bg-white border-0 text-gray-900 placeholder:text-gray-500"
+              className="flex-1 h-12 bg-white border-0 text-navyBlue-500 placeholder:text-navyBlue-400"
             />
             <Button 
               size="lg" 
-              className="bg-white text-sage-600 hover:bg-gray-50 font-semibold h-12 px-8"
+              className="bg-white text-sage-600 hover:bg-primary-50 font-semibold h-12 px-8"
             >
               Subscribe
             </Button>
           </div>
-          <p className="text-sage-100 text-sm mt-3">
+          <p className="text-white/80 text-sm mt-3">
             By subscribing, you agree to our Privacy Policy and Terms of Service.
           </p>
         </div>

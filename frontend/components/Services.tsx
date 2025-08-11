@@ -33,12 +33,15 @@ export function Services() {
               <div className="inline-flex items-center justify-center w-16 h-16 bg-sage-100 rounded-full mb-6 group-hover:bg-sage-200 transition-colors duration-300">
                 <service.icon className="h-8 w-8 text-sage-600" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">{service.title}</h3>
-              <p className="text-gray-600 leading-relaxed">{service.description}</p>
-            </div>
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-dustyPink-100 rounded-full mb-6 group-hover:bg-dustyPink-200 transition-colors duration-300">
+            <h3 className="text-lg font-semibold text-navyBlue-500 mb-3">{service.title}</h3>
+            <p className="text-navyBlue-400 leading-relaxed">{service.description}</p>
           ))}
         </div>
       </div>
+    )
+    )
+    }
     </section>
   );
 }

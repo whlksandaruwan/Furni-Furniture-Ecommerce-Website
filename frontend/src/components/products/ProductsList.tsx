@@ -51,44 +51,106 @@ export function ProductsList() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <div className="bg-gray-50 py-12">
+      
+      {/* Hero Section */}
+      <section className="bg-gradient-to-r from-primary-100 to-primary-200 py-16">
+        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="text-center">
+            <h1 className="text-5xl lg:text-6xl font-bold text-navyBlue-500 leading-tight mb-6">
+              Our Complete
+              <span className="text-sage-500"> Collection</span>
+            </h1>
+            <p className="text-xl text-navyBlue-400 leading-relaxed max-w-3xl mx-auto">
+              Discover our carefully curated selection of premium furniture pieces designed to transform your space into something extraordinary.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div className="bg-lightGray-50 py-12">
       <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
-        {/* Header */}
+        {/* Search and Filters */}
         <div className="mb-10">
-          <h1 className="text-4xl font-bold text-gray-900 mb-6">All Products</h1>
-          
-          {/* Search and Filters */}
-          <div className="flex flex-col sm:flex-row gap-4 mb-6">
+          <div className="flex flex-col lg:flex-row gap-6 mb-8">
+            {/* Search */}
             <form onSubmit={handleSearch} className="flex-1">
               <div className="relative">
-                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
+                <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-navyBlue-400" />
                 <Input
                   type="text"
                   placeholder="Search products..."
                   value={search}
                   onChange={(e) => setSearch(e.target.value)}
-                  className="pl-10"
+                  className="pl-12 h-12 text-lg border-primary-300 focus:border-sage-500 focus:ring-sage-500"
                 />
               </div>
             </form>
             
-            <div className="flex items-center gap-2">
+            {/* Filter Buttons */}
+            <div className="flex items-center gap-4">
+              <div className="flex items-center gap-2 bg-white p-2 rounded-lg border border-primary-300">
+                <span className="text-sm font-medium text-navyBlue-500 px-2">View:</span>
+                <Button
+                  variant={viewMode === 'grid' ? 'default' : 'ghost'}
+                  size="sm"
+                  onClick={() => setViewMode('grid')}
+                  className={viewMode === 'grid' ? 'bg-sage-500 hover:bg-sage-600 text-white' : 'text-navyBlue-500 hover:bg-primary-100'}
+                >
+                  <Grid className="h-4 w-4" />
+                </Button>
+                <Button
+                  variant={viewMode === 'list' ? 'default' : 'ghost'}
+                  size="sm"
+                  onClick={() => setViewMode('list')}
+                  className={viewMode === 'list' ? 'bg-sage-500 hover:bg-sage-600 text-white' : 'text-navyBlue-500 hover:bg-primary-100'}
+                >
+                  <List className="h-4 w-4" />
+                </Button>
+              </div>
+              
               <Button
-                variant={viewMode === 'grid' ? 'default' : 'outline'}
+                variant="outline"
                 size="sm"
-                onClick={() => setViewMode('grid')}
+                className="border-sage-500 text-sage-500 hover:bg-sage-50"
               >
-                <Grid className="h-4 w-4" />
-              </Button>
-              <Button
-                variant={viewMode === 'list' ? 'default' : 'outline'}
-                size="sm"
-                onClick={() => setViewMode('list')}
-              >
-                <List className="h-4 w-4" />
+                <Filter className="h-4 w-4 mr-2" />
+                Filters
               </Button>
             </div>
           </div>
+          
+          {/* Category Pills */}
+          <div className="flex flex-wrap gap-3 mb-6">
+            {['All', 'Chairs', 'Tables', 'Sofas', 'Storage', 'Lighting', 'Decor'].map((category) => (
+              <Button
+                key={category}
+                variant={category === 'All' ? 'default' : 'outline'}
+                size="sm"
+                className={category === 'All' 
+                  ? 'bg-sage-500 hover:bg-sage-600 text-white' 
+                  : 'border-primary-300 text-navyBlue-500 hover:bg-primary-100'
+                }
+              >
+                {category}
+              </Button>
+            ))}
+          </div>
+          
+          {/* Results Info */}
+          {productsData && (
+            <div className="flex justify-between items-center mb-6">
+              <p className="text-navyBlue-400">
+                Showing {productsData.products.length} of {productsData.total} products
+              </p>
+              <select className="border border-primary-300 rounded-lg px-4 py-2 text-navyBlue-500 focus:border-sage-500 focus:ring-sage-500">
+                <option>Sort by: Featured</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+                <option>Newest First</option>
+                <option>Best Rating</option>
+              </select>
+            </div>
+          )}
         </div>
 
         {/* Products Grid */}
@@ -106,16 +168,17 @@ export function ProductsList() {
 
             {/* Pagination */}
             {productsData.totalPages > 1 && (
-              <div className="flex justify-center items-center gap-2 mt-8">
+              <div className="flex justify-center items-center gap-4 mt-12">
                 <Button
                   variant="outline"
                   onClick={() => setPage(page - 1)}
                   disabled={page === 1}
+                  className="border-sage-500 text-sage-500 hover:bg-sage-50"
                 >
                   Previous
                 </Button>
                 
-                <span className="text-sm text-gray-600">
+                <span className="text-navyBlue-500 font-medium px-4">
                   Page {page} of {productsData.totalPages}
                 </span>
                 
@@ -123,6 +186,7 @@ export function ProductsList() {
                   variant="outline"
                   onClick={() => setPage(page + 1)}
                   disabled={page === productsData.totalPages}
+                  className="border-sage-500 text-sage-500 hover:bg-sage-50"
                 >
                   Next
                 </Button>
@@ -131,8 +195,8 @@ export function ProductsList() {
           </>
         ) : (
           <div className="text-center py-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">No products found</h2>
-            <p className="text-gray-600">Try adjusting your search criteria.</p>
+            <h2 className="text-2xl font-bold text-navyBlue-500 mb-4">No products found</h2>
+            <p className="text-navyBlue-400">Try adjusting your search criteria.</p>
           </div>
         )}
       </div>
