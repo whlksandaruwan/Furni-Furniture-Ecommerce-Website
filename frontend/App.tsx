@@ -18,6 +18,7 @@ import { AboutUs } from './src/components/pages/AboutUs';
 import { Services as ServicesPage } from './src/components/pages/Services';
 import { Blog } from './src/components/pages/Blog';
 import { ContactUs } from './src/components/pages/ContactUs';
+import { Chatbot } from './src/components/chatbot/Chatbot';
 
 const queryClient = new QueryClient();
 
@@ -69,6 +70,7 @@ export default function App() {
             />
           </Routes>
         </Router>
+        <Chatbot />
       </AuthProvider>
     </QueryClientProvider>
   );
