@@ -1,8 +1,6 @@
 @@ .. @@
  import React, { useState } from 'react';
  import { useQuery } from '@tanstack/react-query';
-import { Header } from '../../layout/Header';
-import { Footer } from '../../layout/Footer';
 -import { productsService } from '../../services/products.service';
 +import { Header } from '../../layout/Header';
 +import { Footer } from '../../layout/Footer';
