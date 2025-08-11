@@ -1,4 +1,4 @@
-import { Search, ShoppingCart as ShoppingCartIcon, Menu, X, User, LogOut, Settings } from 'lucide-react';
+import { Search, ShoppingCart as ShoppingCartIcon, Menu, X, User, LogOut, Settings, Heart } from 'lucide-react';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
 import { useState } from 'react';
@@ -31,44 +31,34 @@ export function Header() {
 
           {/* Search and Cart */}
           <div className="flex items-center space-x-4">
-            <Button variant="ghost" size="icon" className="hidden sm:flex">
+            {/* Search */}
+            <Button variant="ghost" size="icon">
               <Search className="h-5 w-5" />
             </Button>
             
+            {/* Favorites */}
+            <Button variant="ghost" size="icon">
+              <Heart className="h-5 w-5" />
+            </Button>
+            
+            {/* Shopping Cart */}
             <ShoppingCartComponent />
 
-            {/* Auth buttons */}
+            {/* Profile/Auth */}
             {isAuthenticated ? (
-              <div className="flex items-center space-x-2">
-                {isAdmin && (
-                  <Link to="/admin">
-                    <Button variant="ghost" size="icon">
-                      <Settings className="h-5 w-5" />
-                    </Button>
-                  </Link>
-                )}
+              <div className="relative">
                 <Link to="/account">
                   <Button variant="ghost" size="icon">
                     <User className="h-5 w-5" />
                   </Button>
                 </Link>
-                <Button variant="ghost" size="icon" onClick={logout}>
-                  <LogOut className="h-5 w-5" />
-                </Button>
               </div>
             ) : (
-              <div className="flex items-center space-x-2">
-                <Link to="/login">
-                  <Button variant="outline" size="default" className="text-base">
-                    Sign In
-                  </Button>
-                </Link>
-                <Link to="/signup">
-                  <Button size="default" className="text-base bg-sage-500 hover:bg-sage-600">
-                    Sign Up
-                  </Button>
-                </Link>
-              </div>
+              <Link to="/login">
+                <Button variant="ghost" size="icon">
+                  <User className="h-5 w-5" />
+                </Button>
+              </Link>
             )}
 
             {/* Mobile menu button */}
@@ -93,6 +83,24 @@ export function Header() {
               <Link to="/services" className="text-xl text-gray-700 hover:text-primary transition-colors font-medium">Services</Link>
               <Link to="/blog" className="text-xl text-gray-700 hover:text-primary transition-colors font-medium">Blog</Link>
               <Link to="/contact" className="text-xl text-gray-700 hover:text-primary transition-colors font-medium">Contact us</Link>
+              
+              {/* Mobile Auth Links */}
+              {isAuthenticated ? (
+                <div className="pt-4 border-t border-gray-200 space-y-4">
+                  <Link to="/account" className="text-xl text-gray-700 hover:text-primary transition-colors font-medium">My Account</Link>
+                  {isAdmin && (
+                    <Link to="/admin" className="text-xl text-gray-700 hover:text-primary transition-colors font-medium">Admin Dashboard</Link>
+                  )}
+                  <button onClick={logout} className="text-xl text-gray-700 hover:text-primary transition-colors font-medium text-left">
+                    Sign Out
+                  </button>
+                </div>
+              ) : (
+                <div className="pt-4 border-t border-gray-200 space-y-4">
+                  <Link to="/login" className="text-xl text-gray-700 hover:text-primary transition-colors font-medium">Sign In</Link>
+                  <Link to="/signup" className="text-xl text-gray-700 hover:text-primary transition-colors font-medium">Sign Up</Link>
+                </div>
+              )}
             </nav>
           </div>
         )}
