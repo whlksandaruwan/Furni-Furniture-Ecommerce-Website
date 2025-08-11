@@ -53,12 +53,12 @@ export function ProductsList() {
       <Header />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary-100 to-primary-200 py-16">
+      <section className="bg-gradient-to-r from-emerald-50 to-teal-50 py-16">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center">
             <h1 className="text-5xl lg:text-6xl font-bold text-navyBlue-500 leading-tight mb-6">
               Our Complete
-              <span className="text-sage-500"> Collection</span>
+              <span className="text-emerald-600"> Collection</span>
             </h1>
             <p className="text-xl text-navyBlue-400 leading-relaxed max-w-3xl mx-auto">
               Discover our carefully curated selection of premium furniture pieces designed to transform your space into something extraordinary.
@@ -67,7 +67,7 @@ export function ProductsList() {
         </div>
       </section>
 
-      <div className="bg-lightGray-50 py-12">
+      <div className="bg-gray-50 py-12">
       <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
         {/* Search and Filters */}
         <div className="mb-10">
@@ -81,20 +81,20 @@ export function ProductsList() {
                   placeholder="Search products..."
                   value={search}
                   onChange={(e) => setSearch(e.target.value)}
-                  className="pl-12 h-12 text-lg border-primary-300 focus:border-sage-500 focus:ring-sage-500"
+                   className="pl-12 h-12 text-lg border-emerald-300 focus:border-emerald-500 focus:ring-emerald-500"
                 />
               </div>
             </form>
             
             {/* Filter Buttons */}
             <div className="flex items-center gap-4">
-              <div className="flex items-center gap-2 bg-white p-2 rounded-lg border border-primary-300">
+               <div className="flex items-center gap-2 bg-white p-2 rounded-lg border border-emerald-300">
                 <span className="text-sm font-medium text-navyBlue-500 px-2">View:</span>
                 <Button
                   variant={viewMode === 'grid' ? 'default' : 'ghost'}
                   size="sm"
                   onClick={() => setViewMode('grid')}
-                  className={viewMode === 'grid' ? 'bg-sage-500 hover:bg-sage-600 text-white' : 'text-navyBlue-500 hover:bg-primary-100'}
+                   className={viewMode === 'grid' ? 'bg-emerald-600 hover:bg-emerald-700 text-white' : 'text-navyBlue-500 hover:bg-emerald-100'}
                 >
                   <Grid className="h-4 w-4" />
                 </Button>
@@ -102,7 +102,7 @@ export function ProductsList() {
                   variant={viewMode === 'list' ? 'default' : 'ghost'}
                   size="sm"
                   onClick={() => setViewMode('list')}
-                  className={viewMode === 'list' ? 'bg-sage-500 hover:bg-sage-600 text-white' : 'text-navyBlue-500 hover:bg-primary-100'}
+                   className={viewMode === 'list' ? 'bg-emerald-600 hover:bg-emerald-700 text-white' : 'text-navyBlue-500 hover:bg-emerald-100'}
                 >
                   <List className="h-4 w-4" />
                 </Button>
@@ -111,7 +111,7 @@ export function ProductsList() {
               <Button
                 variant="outline"
                 size="sm"
-                className="border-sage-500 text-sage-500 hover:bg-sage-50"
+                 className="border-emerald-500 text-emerald-500 hover:bg-emerald-50"
               >
                 <Filter className="h-4 w-4 mr-2" />
                 Filters
@@ -127,8 +127,8 @@ export function ProductsList() {
                 variant={category === 'All' ? 'default' : 'outline'}
                 size="sm"
                 className={category === 'All' 
-                  ? 'bg-sage-500 hover:bg-sage-600 text-white' 
-                  : 'border-primary-300 text-navyBlue-500 hover:bg-primary-100'
+                   ? 'bg-emerald-600 hover:bg-emerald-700 text-white' 
+                   : 'border-emerald-300 text-navyBlue-500 hover:bg-emerald-100'
                 }
               >
                 {category}
@@ -142,7 +142,7 @@ export function ProductsList() {
               <p className="text-navyBlue-400">
                 Showing {productsData.products.length} of {productsData.total} products
               </p>
-              <select className="border border-primary-300 rounded-lg px-4 py-2 text-navyBlue-500 focus:border-sage-500 focus:ring-sage-500">
+               <select className="border border-emerald-300 rounded-lg px-4 py-2 text-navyBlue-500 focus:border-emerald-500 focus:ring-emerald-500">
                 <option>Sort by: Featured</option>
                 <option>Price: Low to High</option>
                 <option>Price: High to Low</option>
@@ -173,7 +173,7 @@ export function ProductsList() {
                   variant="outline"
                   onClick={() => setPage(page - 1)}
                   disabled={page === 1}
-                  className="border-sage-500 text-sage-500 hover:bg-sage-50"
+                   className="border-emerald-500 text-emerald-500 hover:bg-emerald-50"
                 >
                   Previous
                 </Button>
@@ -186,7 +186,7 @@ export function ProductsList() {
                   variant="outline"
                   onClick={() => setPage(page + 1)}
                   disabled={page === productsData.totalPages}
-                  className="border-sage-500 text-sage-500 hover:bg-sage-50"
+                   className="border-emerald-500 text-emerald-500 hover:bg-emerald-50"
                 >
                   Next
                 </Button>

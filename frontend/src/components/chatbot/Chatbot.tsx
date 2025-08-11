@@ -141,7 +141,7 @@ export function Chatbot() {
       <div className="fixed bottom-6 right-6 z-50">
         <Button
           onClick={() => setIsOpen(true)}
-          className="h-14 w-14 rounded-full bg-sage-500 hover:bg-sage-600 shadow-lg hover:shadow-xl transition-all duration-300"
+          className="h-14 w-14 rounded-full bg-emerald-600 hover:bg-emerald-700 shadow-lg hover:shadow-xl transition-all duration-300"
           size="icon"
         >
           <MessageCircle className="h-6 w-6" />
@@ -159,14 +159,14 @@ export function Chatbot() {
         isMinimized ? 'w-80 h-16' : 'w-80 h-96'
       }`}>
         {/* Header */}
-        <div className="flex items-center justify-between p-4 border-b bg-sage-500 text-white rounded-t-2xl">
+        <div className="flex items-center justify-between p-4 border-b bg-emerald-600 text-white rounded-t-2xl">
           <div className="flex items-center space-x-3">
             <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
-              <Bot className="h-5 w-5 text-sage-600" />
+              <Bot className="h-5 w-5 text-emerald-600" />
             </div>
             <div>
               <h3 className="font-semibold">Furni Assistant</h3>
-              <p className="text-xs text-sage-100">Online now</p>
+              <p className="text-xs text-emerald-100">Online now</p>
             </div>
           </div>
           <div className="flex items-center space-x-2">
@@ -174,7 +174,7 @@ export function Chatbot() {
               variant="ghost"
               size="icon"
               onClick={() => setIsMinimized(!isMinimized)}
-              className="text-white hover:bg-sage-600 h-8 w-8"
+              className="text-white hover:bg-emerald-700 h-8 w-8"
             >
               {isMinimized ? <Maximize2 className="h-4 w-4" /> : <Minimize2 className="h-4 w-4" />}
             </Button>
@@ -182,7 +182,7 @@ export function Chatbot() {
               variant="ghost"
               size="icon"
               onClick={() => setIsOpen(false)}
-              className="text-white hover:bg-sage-600 h-8 w-8"
+              className="text-white hover:bg-emerald-700 h-8 w-8"
             >
               <X className="h-4 w-4" />
             </Button>
@@ -214,7 +214,7 @@ export function Chatbot() {
                     </div>
                     <div className={`rounded-2xl px-3 py-2 ${
                       message.sender === 'user'
-                        ? 'bg-sage-500 text-white'
+                        ? 'bg-emerald-600 text-white'
                         : 'bg-gray-100 text-gray-900'
                     }`}>
                       <p className="text-sm">{message.text}</p>
@@ -255,7 +255,7 @@ export function Chatbot() {
                 <Button
                   onClick={handleSendMessage}
                   disabled={!inputMessage.trim() || isTyping}
-                  className="bg-sage-500 hover:bg-sage-600"
+                  className="bg-emerald-600 hover:bg-emerald-700"
                   size="icon"
                 >
                   <Send className="h-4 w-4" />

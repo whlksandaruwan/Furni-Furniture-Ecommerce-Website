@@ -38,7 +38,7 @@ export function Categories() {
           {categories.map((category, index) => (
             <div
               key={index}
-              className="group cursor-pointer bg-primary-50 rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 border border-primary-200"
+              className="group cursor-pointer bg-emerald-50 rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 border border-emerald-200"
             >
               <div className="aspect-square overflow-hidden">
                 <ImageWithFallback

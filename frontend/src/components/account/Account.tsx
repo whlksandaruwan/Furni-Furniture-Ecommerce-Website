@@ -90,7 +90,7 @@ export function Account() {
                 {/* User Info */}
                 <div className="text-center mb-6">
                   <div className="w-20 h-20 bg-sage-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <User className="w-10 h-10 text-sage-600" />
+                    <User className="w-10 h-10 text-emerald-600" />
                   </div>
                   <h3 className="text-lg font-semibold text-gray-900">
                     {user?.firstName} {user?.lastName}
@@ -109,7 +109,7 @@ export function Account() {
                       onClick={() => setActiveTab(tab.id as any)}
                       className={`w-full flex items-center px-4 py-3 text-left rounded-lg transition-colors ${
                         activeTab === tab.id
-                          ? 'bg-sage-100 text-sage-700 font-medium'
+                          ? 'bg-emerald-100 text-emerald-700 font-medium'
                           : 'text-gray-600 hover:bg-gray-50'
                       }`}
                     >
@@ -302,7 +302,7 @@ export function Account() {
                         <Button
                           type="submit"
                           disabled={isLoading}
-                          className="bg-sage-500 hover:bg-sage-600"
+                          className="bg-emerald-600 hover:bg-emerald-700"
                         >
                           {isLoading ? 'Updating...' : 'Update Profile'}
                         </Button>
@@ -319,7 +319,7 @@ export function Account() {
                       <h3 className="text-lg font-medium text-gray-900 mb-2">No orders yet</h3>
                       <p className="text-gray-600 mb-4">Start shopping to see your orders here.</p>
                       <Link to="/products">
-                        <Button className="bg-sage-500 hover:bg-sage-600">
+                        <Button className="bg-emerald-600 hover:bg-emerald-700">
                           Browse Products
                         </Button>
                       </Link>
@@ -335,7 +335,7 @@ export function Account() {
                       <h3 className="text-lg font-medium text-gray-900 mb-2">No favorites yet</h3>
                       <p className="text-gray-600 mb-4">Save items you love to see them here.</p>
                       <Link to="/products">
-                        <Button className="bg-sage-500 hover:bg-sage-600">
+                        <Button className="bg-emerald-600 hover:bg-emerald-700">
                           Browse Products
                         </Button>
                       </Link>
@@ -347,7 +347,7 @@ export function Account() {
                   <div className="p-6">
                     <div className="flex items-center justify-between mb-6">
                       <h2 className="text-2xl font-bold text-gray-900">Saved Addresses</h2>
-                      <Button className="bg-sage-500 hover:bg-sage-600">
+                      <Button className="bg-emerald-600 hover:bg-emerald-700">
                         Add New Address
                       </Button>
                     </div>

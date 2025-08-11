@@ -61,10 +61,10 @@ export function FeaturedProducts() {
                 {/* Badges */}
                 <div className="absolute top-4 left-4 flex flex-col gap-2">
                   {product.isNew && (
-                    <Badge className="bg-sage-500 hover:bg-sage-600 text-white">New</Badge>
+                    <Badge className="bg-emerald-600 hover:bg-emerald-700 text-white">New</Badge>
                   )}
                   {product.isSale && (
-                    <Badge className="bg-dustyPink-500 hover:bg-dustyPink-600 text-white">Sale</Badge>
+                    <Badge className="bg-teal-600 hover:bg-teal-700 text-white">Sale</Badge>
                   )}
                 </div>
 
@@ -79,7 +79,7 @@ export function FeaturedProducts() {
 
                 {/* Quick add overlay */}
                 <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <Button className="bg-white text-navyBlue-500 hover:bg-primary-50 border border-primary-300">
+                  <Button className="bg-white text-navyBlue-500 hover:bg-emerald-50 border border-emerald-300">
                     Quick Add
                   </Button>
                 </div>
@@ -105,7 +105,7 @@ export function FeaturedProducts() {
                   )}
                 </div>
 
-                <Button className="w-full bg-sage-500 hover:bg-sage-600 text-white">
+                <Button className="w-full bg-emerald-600 hover:bg-emerald-700 text-white">
                   Add to Cart
                 </Button>
               </div>

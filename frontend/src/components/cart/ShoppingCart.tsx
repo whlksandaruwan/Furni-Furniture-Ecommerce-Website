@@ -78,7 +78,7 @@ export function ShoppingCart() {
       >
         <ShoppingCartIcon className="h-5 w-5 text-navyBlue-500" />
         {cart && cart.itemCount > 0 && (
-          <Badge className="absolute -top-2 -right-2 h-5 w-5 rounded-full p-0 flex items-center justify-center bg-sage-500 text-white text-xs">
+          <Badge className="absolute -top-2 -right-2 h-5 w-5 rounded-full p-0 flex items-center justify-center bg-emerald-600 text-white text-xs">
             {cart.itemCount}
           </Badge>
         )}
@@ -86,8 +86,8 @@ export function ShoppingCart() {
 
       {/* Cart Dropdown */}
       {isOpen && (
-        <div className="absolute right-0 top-full mt-2 w-96 bg-white rounded-lg shadow-xl border border-primary-200 z-50">
-          <div className="p-4 border-b border-primary-200">
+        <div className="absolute right-0 top-full mt-2 w-96 bg-white rounded-lg shadow-xl border border-emerald-200 z-50">
+          <div className="p-4 border-b border-emerald-200">
             <div className="flex items-center justify-between">
               <h3 className="text-lg font-semibold text-navyBlue-500">Shopping Cart</h3>
               <Button
@@ -105,7 +105,7 @@ export function ShoppingCart() {
             {cart && cart.items.length > 0 ? (
               <div className="p-4 space-y-4">
                 {cart.items.map((item) => (
-                  <div key={item.id} className="flex items-center space-x-3 p-3 bg-primary-50 rounded-lg">
+                  <div key={item.id} className="flex items-center space-x-3 p-3 bg-emerald-50 rounded-lg">
                     <div className="w-16 h-16 rounded-lg overflow-hidden flex-shrink-0">
                       <ImageWithFallback
                         src={item.product.image}
@@ -177,7 +177,7 @@ export function ShoppingCart() {
           </div>
 
           {cart && cart.items.length > 0 && (
-            <div className="p-4 border-t border-primary-200 bg-primary-50">
+            <div className="p-4 border-t border-emerald-200 bg-emerald-50">
               <div className="flex items-center justify-between mb-4">
                 <span className="text-lg font-semibold text-navyBlue-500">Total:</span>
                 <span className="text-lg font-bold text-sage-600">
@@ -187,7 +187,7 @@ export function ShoppingCart() {
               
               <div className="space-y-2">
                 <Button 
-                  className="w-full bg-sage-500 hover:bg-sage-600 text-white"
+                  className="w-full bg-emerald-600 hover:bg-emerald-700 text-white"
                   onClick={() => setIsOpen(false)}
                 >
                   Checkout
@@ -196,7 +196,7 @@ export function ShoppingCart() {
                 <div className="flex space-x-2">
                   <Button 
                     variant="outline" 
-                    className="flex-1 border-sage-500 text-sage-500 hover:bg-sage-50"
+                    className="flex-1 border-emerald-500 text-emerald-500 hover:bg-emerald-50"
                     onClick={() => setIsOpen(false)}
                   >
                     View Cart
