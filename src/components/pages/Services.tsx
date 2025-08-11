@@ -1,8 +1,8 @@
 import React from 'react';
-import { Header } from '../../../components/Header';
-import { Footer } from '../../../components/Footer';
-import { Button } from '../../../components/ui/button';
-import { Badge } from '../../../components/ui/badge';
+import { Header } from '../layout/Header';
+import { Footer } from '../layout/Footer';
+import { Button } from '../ui/button';
+import { Badge } from '../ui/badge';
 import { 
   Truck, 
   Shield, 
@@ -15,7 +15,7 @@ import {
   CheckCircle,
   Star
 } from 'lucide-react';
-import { ImageWithFallback } from '../../../components/figma/ImageWithFallback';
+import { ImageWithFallback } from '../common/ImageWithFallback';
 
 const mainServices = [
   {

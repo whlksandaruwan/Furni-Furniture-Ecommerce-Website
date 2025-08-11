@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { Header } from '../../../components/Header';
-import { Footer } from '../../../components/Footer';
-import { Button } from '../../../components/ui/button';
-import { Badge } from '../../../components/ui/badge';
-import { Input } from '../../../components/ui/input';
+import { Header } from '../layout/Header';
+import { Footer } from '../layout/Footer';
+import { Button } from '../ui/button';
+import { Badge } from '../ui/badge';
+import { Input } from '../ui/input';
 import { Search, Calendar, User, ArrowRight, Clock } from 'lucide-react';
-import { ImageWithFallback } from '../../../components/figma/ImageWithFallback';
+import { ImageWithFallback } from '../common/ImageWithFallback';
 
 const featuredPost = {
   id: 1,

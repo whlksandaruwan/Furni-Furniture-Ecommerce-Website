@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { Header } from '../../../components/Header';
-import { Footer } from '../../../components/Footer';
-import { Button } from '../../../components/ui/button';
-import { Input } from '../../../components/ui/input';
-import { Textarea } from '../../../components/ui/textarea';
-import { Badge } from '../../../components/ui/badge';
+import { Header } from '../layout/Header';
+import { Footer } from '../layout/Footer';
+import { Button } from '../ui/button';
+import { Input } from '../ui/input';
+import { Textarea } from '../ui/textarea';
+import { Badge } from '../ui/badge';
 import { 
   MapPin, 
   Phone, 
