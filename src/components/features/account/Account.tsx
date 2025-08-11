@@ -17,7 +17,7 @@ import {
   Edit
 } from 'lucide-react';
 import { useAuth } from '../../../contexts/AuthContext';
-import api from '../../services/api';
+import api from '../../../services/api';
 import { Link } from 'react-router-dom';
 
 export function Account() {

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
-import { Header } from '../../../components/Header';
-import { Footer } from '../../../components/Footer';
+import { Header } from '../../layout/Header';
+import { Footer } from '../../layout/Footer';
 import { Button } from '../../../components/ui/button';
 import { Badge } from '../../../components/ui/badge';
 import { 
