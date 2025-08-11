@@ -27,7 +27,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <AuthProvider>
-        <Router>
+        <Router basename="/furni-furniture-ecommerce">
           <div className="min-h-screen bg-white">
             <Routes>
               {/* Public Routes */}
