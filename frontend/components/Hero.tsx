@@ -5,8 +5,8 @@ import { useState, useEffect } from 'react';
 const heroSlides = [
   {
     image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-    title: "Premium Quality",
-    subtitle: "Handcrafted furniture"
+    title: "Sustainable Materials",
+    subtitle: "Eco-friendly craftsmanship"
   },
   {
     image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
@@ -15,8 +15,8 @@ const heroSlides = [
   },
   {
     image: "https://images.unsplash.com/photo-1549497538-303791108f95?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    title: "Sustainable Materials",
-    subtitle: "Eco-friendly craftsmanship"
+    title: "Premium Quality",
+    subtitle: "Handcrafted furniture"
   },
   {
     image: "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
@@ -37,16 +37,16 @@ export function Hero() {
   }, []);
 
   return (
-    <section className="bg-gradient-to-r from-emerald-50 to-teal-50 py-24">
-      <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
+    <section className="bg-gradient-to-r from-emerald-50 to-teal-50 py-24 min-h-screen flex items-center">
+      <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <h1 className="text-6xl lg:text-7xl font-bold text-navyBlue-500 leading-tight">
               Modern Interior
-              <span className="text-emerald-600"> Design Studio</span>
+              <span className="text-emerald-600 block"> Design Studio</span>
             </h1>
             <p className="text-xl text-navyBlue-400 leading-relaxed">
-            We design interiors that combine style, comfort, and functionality—crafted to reflect your personality and enhance your everyday life.
+              We design interiors that combine style, comfort, and functionality—crafted to reflect your personality and enhance your everyday life.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-white text-lg px-8 py-4">
