@@ -30,8 +30,8 @@ export function Services() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
             <div key={index} className="text-center group">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-emerald-100 rounded-full mb-6 group-hover:bg-emerald-200 transition-colors duration-300">
-                <service.icon className="h-8 w-8 text-emerald-600" />
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-sage-100 rounded-full mb-6 group-hover:bg-sage-200 transition-colors duration-300">
+                <service.icon className="h-8 w-8 text-sage-600" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-3">{service.title}</h3>
               <p className="text-gray-600 leading-relaxed">{service.description}</p>

@@ -3,12 +3,12 @@ import { Input } from './ui/input';
 
 export function Newsletter() {
   return (
-    <section className="py-20 bg-gradient-to-r from-emerald-600 to-teal-600">
+    <section className="py-20 bg-gradient-to-r from-sage-500 to-sage-600">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
           Subscribe to our Newsletter
         </h2>
-        <p className="text-xl text-emerald-100 mb-8 max-w-2xl mx-auto">
+        <p className="text-xl text-sage-100 mb-8 max-w-2xl mx-auto">
           Get updates on new products, special offers, and design inspiration delivered straight to your inbox.
         </p>
         
@@ -21,12 +21,12 @@ export function Newsletter() {
             />
             <Button 
               size="lg" 
-              className="bg-white text-emerald-600 hover:bg-gray-50 font-semibold h-12 px-8"
+              className="bg-white text-sage-600 hover:bg-gray-50 font-semibold h-12 px-8"
             >
               Subscribe
             </Button>
           </div>
-          <p className="text-emerald-100 text-sm mt-3">
+          <p className="text-sage-100 text-sm mt-3">
             By subscribing, you agree to our Privacy Policy and Terms of Service.
           </p>
         </div>

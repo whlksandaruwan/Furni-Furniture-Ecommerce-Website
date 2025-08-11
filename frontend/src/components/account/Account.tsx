@@ -211,7 +211,7 @@ export function Account() {
                 <Button
                   type="submit"
                   disabled={isLoading}
-                  className="bg-emerald-600 hover:bg-emerald-700"
+                  className="bg-sage-500 hover:bg-sage-600"
                 >
                   {isLoading ? 'Updating...' : 'Update Profile'}
                 </Button>

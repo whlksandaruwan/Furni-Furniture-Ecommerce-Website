@@ -64,7 +64,7 @@ export function Header() {
                   </Button>
                 </Link>
                 <Link to="/signup">
-                  <Button size="default" className="text-base">
+                  <Button size="default" className="text-base bg-sage-500 hover:bg-sage-600">
                     Sign Up
                   </Button>
                 </Link>
