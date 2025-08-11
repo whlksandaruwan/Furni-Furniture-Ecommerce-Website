@@ -61,7 +61,7 @@ export function FeaturedProducts() {
                 {/* Badges */}
                 <div className="absolute top-4 left-4 flex flex-col gap-2">
                   {product.isNew && (
-                    <Badge className="bg-emerald-500 hover:bg-emerald-600">New</Badge>
+                    <Badge className="bg-sage-500 hover:bg-sage-600">New</Badge>
                   )}
                   {product.isSale && (
                     <Badge variant="destructive">Sale</Badge>
@@ -105,7 +105,7 @@ export function FeaturedProducts() {
                   )}
                 </div>
 
-                <Button className="w-full bg-emerald-600 hover:bg-emerald-700">
+                <Button className="w-full bg-sage-500 hover:bg-sage-600">
                   Add to Cart
                 </Button>
               </div>

@@ -37,20 +37,20 @@ export function Hero() {
   }, []);
 
   return (
-    <section className="bg-gradient-to-r from-emerald-50 to-teal-50 py-24">
+    <section className="bg-gradient-to-r from-sage-100 to-sage-200 py-24">
       <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <h1 className="text-6xl lg:text-7xl font-bold text-gray-900 leading-tight">
               Modern Interior
-              <span className="text-emerald-600"> Design Studio</span>
+              <span className="text-sage-500"> Design Studio</span>
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed">
               Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. 
               Aliquam vulputate velit imperdiet dolor tempor tristique.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-lg px-8 py-4">
+              <Button size="lg" className="bg-sage-500 hover:bg-sage-600 text-lg px-8 py-4">
                 Shop Now
               </Button>
               <Button variant="outline" size="lg" className="text-lg px-8 py-4">
@@ -86,8 +86,8 @@ export function Hero() {
             {/* Floating card with slide content */}
             <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg transition-all duration-500">
               <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center">
-                  <span className="text-emerald-600 font-bold text-lg">✓</span>
+                <div className="w-12 h-12 bg-sage-100 rounded-full flex items-center justify-center">
+                  <span className="text-sage-600 font-bold text-lg">✓</span>
                 </div>
                 <div>
                   <p className="font-semibold text-gray-900 text-lg">{heroSlides[currentSlide].title}</p>
