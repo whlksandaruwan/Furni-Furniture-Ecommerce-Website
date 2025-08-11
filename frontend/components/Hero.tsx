@@ -59,11 +59,11 @@ export function Hero() {
           </div>
           
           <div className="relative">
-            <div className="relative overflow-hidden rounded-2xl shadow-2xl w-full h-[600px] bg-gradient-to-br from-amber-100 to-orange-200">
+            <div className="relative overflow-hidden rounded-2xl shadow-2xl w-full h-[480px] bg-gradient-to-br from-amber-100 to-orange-200">
               <ImageWithFallback
                 src={heroSlides[currentSlide].image}
                 alt={heroSlides[currentSlide].title}
-                className="w-full h-full object-cover object-center transition-opacity duration-1000 ease-in-out rounded-2xl"
+                className="w-full h-full object-contain object-center transition-opacity duration-1000 ease-in-out rounded-2xl"
               />
               
               {/* Slide indicators */}
