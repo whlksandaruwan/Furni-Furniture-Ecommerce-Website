@@ -17,7 +17,7 @@ export function Header() {
   }, [location.pathname]);
 
   return (
-    <header className="bg-navyBlue-500 border-b border-navyBlue-400 sticky top-0 z-50 shadow-sm backdrop-blur-sm">
+    <header className="bg-navyBlue-800 border-b border-navyBlue-700 sticky top-0 z-50 shadow-sm backdrop-blur-sm">
       <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -83,7 +83,7 @@ export function Header() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden border-t border-white/20 py-4 bg-navyBlue-600/90 backdrop-blur-sm">
+          <div className="md:hidden border-t border-white/20 py-4 bg-navyBlue-900/95 backdrop-blur-sm">
             <nav className="flex flex-col space-y-4">
               <Link to="/" className="text-lg text-white hover:text-emerald-200 transition-colors font-medium px-4 py-2 rounded-lg hover:bg-white/20" onClick={() => setIsMenuOpen(false)}>Home</Link>
               <Link to="/products" className="text-lg text-white hover:text-emerald-200 transition-colors font-medium px-4 py-2 rounded-lg hover:bg-white/20" onClick={() => setIsMenuOpen(false)}>Shop</Link>
