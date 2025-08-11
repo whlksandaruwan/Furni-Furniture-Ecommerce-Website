@@ -37,33 +37,33 @@ export function Hero() {
   }, []);
 
   return (
-    <section className="bg-gradient-to-r from-orange-50 to-amber-50 py-24 min-h-screen flex items-center">
-      <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 w-full">
+    <section className="bg-gradient-to-r from-emerald-50 to-teal-50 py-24">
+      <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <h1 className="text-6xl lg:text-7xl font-bold text-navyBlue-500 leading-tight">
               Modern Interior
-              <span className="text-amber-600 block"> Design Studio</span>
+              <span className="text-emerald-600"> Design Studio</span>
             </h1>
             <p className="text-xl text-navyBlue-400 leading-relaxed">
-              We design interiors that combine style, comfort, and functionality—crafted to reflect your personality and enhance your everyday life.
+            We design interiors that combine style, comfort, and functionality—crafted to reflect your personality and enhance your everyday life.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-amber-600 hover:bg-amber-700 text-white text-lg px-8 py-4">
+              <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-white text-lg px-8 py-4">
                 Shop Now
               </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-amber-600 text-amber-600 hover:bg-amber-50">
+              <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-emerald-600 text-emerald-600 hover:bg-emerald-50">
                 Explore
               </Button>
             </div>
           </div>
           
           <div className="relative">
-            <div className="relative overflow-hidden rounded-2xl shadow-2xl w-full h-[480px] bg-gradient-to-br from-amber-100 to-orange-200">
+            <div className="relative overflow-hidden rounded-2xl shadow-2xl w-full h-[550px]">
               <ImageWithFallback
                 src={heroSlides[currentSlide].image}
                 alt={heroSlides[currentSlide].title}
-                className="w-full h-full object-contain object-center transition-opacity duration-1000 ease-in-out rounded-2xl"
+                className="w-full h-full object-cover object-center transition-opacity duration-1000 ease-in-out"
               />
               
               {/* Slide indicators */}
@@ -83,10 +83,10 @@ export function Hero() {
             </div>
             
             {/* Floating card with slide content */}
-            <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg transition-all duration-500 border border-amber-200">
+            <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg transition-all duration-500 border border-emerald-200">
               <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-lg">✓</span>
+                <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center">
+                  <span className="text-emerald-600 font-bold text-lg">✓</span>
                 </div>
                 <div>
                   <p className="font-semibold text-navyBlue-500 text-lg">{heroSlides[currentSlide].title}</p>
