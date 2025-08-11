@@ -46,8 +46,7 @@ export function Hero() {
               <span className="text-emerald-600"> Design Studio</span>
             </h1>
             <p className="text-xl text-navyBlue-400 leading-relaxed">
-              Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. 
-              Aliquam vulputate velit imperdiet dolor tempor tristique.
+            We design interiors that combine style, comfort, and functionality—crafted to reflect your personality and enhance your everyday life.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-white text-lg px-8 py-4">
