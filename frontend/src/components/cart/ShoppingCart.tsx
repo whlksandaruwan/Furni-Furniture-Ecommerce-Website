@@ -61,8 +61,8 @@ export function ShoppingCart() {
 
   if (isLoading) {
     return (
-      <Button variant="ghost" size="icon" className="hover:bg-emerald-200/50 relative w-10 h-10">
-        <ShoppingCartIcon className="h-6 w-6 text-emerald-700" />
+      <Button variant="ghost" size="icon" className="hover:bg-white/20 relative w-10 h-10">
+        <ShoppingCartIcon className="h-6 w-6 text-white" />
         <div className="animate-spin rounded-full h-3 w-3 border-b-2 border-sage-500 absolute -top-1 -right-1"></div>
       </Button>
     );
@@ -73,10 +73,10 @@ export function ShoppingCart() {
       <Button 
         variant="ghost" 
         size="icon"
-        className="hover:bg-emerald-200/50 relative w-10 h-10"
+        className="hover:bg-white/20 relative w-10 h-10"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <ShoppingCartIcon className="h-6 w-6 text-emerald-700" />
+        <ShoppingCartIcon className="h-6 w-6 text-white" />
         {cart && cart.itemCount > 0 && (
           <Badge className="absolute -top-2 -right-2 h-5 w-5 rounded-full p-0 flex items-center justify-center bg-emerald-600 text-white text-xs">
             {cart.itemCount}
