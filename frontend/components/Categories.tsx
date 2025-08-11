@@ -3,22 +3,22 @@ import { ImageWithFallback } from './figma/ImageWithFallback';
 const categories = [
   {
     name: "Chairs",
-    image: "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+    image: "https://images.unsplash.com/photo-1598300056393-4aac492f4344?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hhaXJ8ZW58MHwyfDB8fHww",
     count: "25+ Products"
   },
   {
     name: "Tables",
-    image: "https://images.unsplash.com/photo-1549497538-303791108f95?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+    image: "https://images.unsplash.com/photo-1745635621480-6a258cc1b1a2?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fHRhYmxlfGVufDB8MnwwfHx8MA%3D%3D",
     count: "18+ Products"
   },
   {
     name: "Sofas",
-    image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+    image: "https://images.unsplash.com/photo-1616047006789-b7af5afb8c20?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNvZmF8ZW58MHwyfDB8fHww",
     count: "15+ Products"
   },
   {
     name: "Storage",
-    image: "https://images.unsplash.com/photo-1586286292644-67d0eda295b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+    image: "https://images.unsplash.com/photo-1641725968226-6531c9b642c4?q=80&w=1160&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     count: "12+ Products"
   }
 ];

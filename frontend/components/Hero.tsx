@@ -9,17 +9,17 @@ const heroSlides = [
     subtitle: "Handcrafted furniture"
   },
   {
-    image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    image: "https://plus.unsplash.com/premium_photo-1683121382153-63d04dc20c8a?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c29mYXxlbnwwfDJ8MHx8fDA%3D",
     title: "Modern Design",
     subtitle: "Contemporary living spaces"
   },
   {
-    image: "https://images.unsplash.com/photo-1549497538-303791108f95?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    image: "https://plus.unsplash.com/premium_photo-1681487772142-e97e8c90a6c6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dGFibGV8ZW58MHwyfDB8fHww",
     title: "Sustainable Materials",
     subtitle: "Eco-friendly craftsmanship"
   },
   {
-    image: "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    image: "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80https://plus.unsplash.com/premium_photo-1683133939183-edd5476e6200?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2hhaXJ8ZW58MHwyfDB8fHww",
     title: "Comfort First",
     subtitle: "Ergonomic excellence"
   }
@@ -59,7 +59,7 @@ export function Hero() {
           </div>
           
           <div className="relative">
-            <div className="relative overflow-hidden rounded-2xl shadow-2xl w-full h-[600px]">
+            <div className="relative overflow-hidden rounded-2xl shadow-2xl w-full h-[550px]">
               <ImageWithFallback
                 src={heroSlides[currentSlide].image}
                 alt={heroSlides[currentSlide].title}
