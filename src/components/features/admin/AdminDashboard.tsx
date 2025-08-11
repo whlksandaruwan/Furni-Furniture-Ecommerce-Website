@@ -15,7 +15,7 @@ import {
   Trash2,
   Eye
 } from 'lucide-react';
-import { useAuth } from '../../contexts/AuthContext';
+import { useAuth } from '../../../contexts/AuthContext';
 import { Navigate } from 'react-router-dom';
 
 interface DashboardStats {
