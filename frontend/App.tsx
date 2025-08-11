@@ -5,6 +5,7 @@ import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { Categories } from './components/Categories';
 import { FeaturedProducts } from './components/FeaturedProducts';
+import { Offers } from './components/Offers';
 import { Services } from './components/Services';
 import { Newsletter } from './components/Newsletter';
 import { Footer } from './components/Footer';
@@ -30,6 +31,7 @@ function HomePage() {
         <Hero />
         <Categories />
         <FeaturedProducts />
+        <Offers />
         <Services />
         <Newsletter />
       </main>
