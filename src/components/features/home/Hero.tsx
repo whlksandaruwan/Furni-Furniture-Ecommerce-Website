@@ -1,31 +1,14 @@
-import { Button } from './ui/button';
-import { ImageWithFallback } from './figma/ImageWithFallback';
+import { Button } from '../../ui/button';
+import { ImageWithFallback } from '../../common/ImageWithFallback';
 import { useState, useEffect } from 'react';
 
 const heroSlides = [
   {
-<<<<<<< HEAD
-    image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-    title: "Premium Quality",
-    subtitle: "Handcrafted furniture"
-  },
-  {
-    image: "https://plus.unsplash.com/premium_photo-1683121382153-63d04dc20c8a?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c29mYXxlbnwwfDJ8MHx8fDA%3D",
-    title: "Modern Design",
-    subtitle: "Contemporary living spaces"
-  },
-  {
-    image: "https://plus.unsplash.com/premium_photo-1681487772142-e97e8c90a6c6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dGFibGV8ZW58MHwyfDB8fHww",
-=======
     image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
->>>>>>> a5ce1d33eec0e64119b2a340e9444b338d5b8cf5
     title: "Sustainable Materials",
     subtitle: "Eco-friendly craftsmanship"
   },
   {
-<<<<<<< HEAD
-    image: "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80https://plus.unsplash.com/premium_photo-1683133939183-edd5476e6200?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2hhaXJ8ZW58MHwyfDB8fHww",
-=======
     image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     title: "Modern Design",
     subtitle: "Contemporary living spaces"
@@ -37,7 +20,6 @@ const heroSlides = [
   },
   {
     image: "https://images.unsplash.com/photo-1549497538-303791108f95?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
->>>>>>> a5ce1d33eec0e64119b2a340e9444b338d5b8cf5
     title: "Comfort First",
     subtitle: "Ergonomic excellence"
   }
@@ -77,11 +59,7 @@ export function Hero() {
           </div>
           
           <div className="relative">
-<<<<<<< HEAD
-            <div className="relative overflow-hidden rounded-2xl shadow-2xl w-full h-[550px]">
-=======
             <div className="relative overflow-hidden rounded-2xl shadow-2xl w-full h-[480px] bg-gradient-to-br from-amber-100 to-orange-200">
->>>>>>> a5ce1d33eec0e64119b2a340e9444b338d5b8cf5
               <ImageWithFallback
                 src={heroSlides[currentSlide].image}
                 alt={heroSlides[currentSlide].title}

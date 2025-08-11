@@ -1,10 +1,10 @@
 import { Search, ShoppingCart as ShoppingCartIcon, Menu, X, User, LogOut, Settings, Heart } from 'lucide-react';
-import { Button } from './ui/button';
-import { Badge } from './ui/badge';
+import { Button } from '../ui/button';
+import { Badge } from '../ui/badge';
 import { useState, useEffect } from 'react';
-import { useAuth } from '../src/contexts/AuthContext';
+import { useAuth } from '../../contexts/AuthContext';
 import { Link, useLocation } from 'react-router-dom';
-import { ShoppingCart as ShoppingCartComponent } from '../src/components/cart/ShoppingCart';
+import { ShoppingCart as ShoppingCartComponent } from '../features/cart/ShoppingCart';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

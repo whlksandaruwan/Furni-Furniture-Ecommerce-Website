@@ -1,7 +1,7 @@
-import { Button } from './ui/button';
-import { Badge } from './ui/badge';
+import { Button } from '../../ui/button';
+import { Badge } from '../../ui/badge';
 import { Heart, Star } from 'lucide-react';
-import { ImageWithFallback } from './figma/ImageWithFallback';
+import { ImageWithFallback } from '../../common/ImageWithFallback';
 
 const products = [
   {

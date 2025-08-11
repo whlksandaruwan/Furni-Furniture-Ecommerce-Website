@@ -1,4 +1,4 @@
-import { ImageWithFallback } from './figma/ImageWithFallback';
+import { ImageWithFallback } from '../../common/ImageWithFallback';
 
 const categories = [
   {
