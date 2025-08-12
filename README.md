@@ -1,4 +1,4 @@
-# Furni Furniture Ecommerce Website (Frontend Demo)
+![D2711E2B-F9BD-4E10-955B-5FAB13BF49DB](https://github.com/user-attachments/assets/a8559cb1-71ca-444c-beae-45941e10c30b)# Furni Furniture Ecommerce Website (Frontend Demo)
 
 A modern furniture ecommerce website built with React, TypeScript, and Tailwind CSS. This is a **frontend-only demo** with mock data - no backend required!
 
@@ -26,6 +26,9 @@ A modern furniture ecommerce website built with React, TypeScript, and Tailwind 
 - **Lucide React** - Icons
 - **React Query** - Data fetching
 - **React Router** - Navigation
+
+![Screenshot](https://github.com/user-attachments/assets/3a5f347d-530a-4a87-95f5-e9961d417a12)
+
 
 ## 📦 Quick Start
 
@@ -175,6 +178,16 @@ The application uses comprehensive mock data including:
 - Firefox (latest)
 - Safari (latest)
 - Edge (latest)
+
+
+![Screenshot](https://github.com/user-attachments/assets/e4fe23d4-9e1e-48d0-890a-a29b60b4c6e2)
+
+![Screenshot](https://github.com/user-attachments/assets/0715e305-67ee-4dba-9c9e-4151fa9e1feb)
+
+![Screenshot](https://github.com/user-attachments/assets/4d86453c-d43e-4740-948d-d911b2275468)
+
+
+
 
 ## 📄 License
 
