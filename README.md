@@ -1,4 +1,4 @@
-![D2711E2B-F9BD-4E10-955B-5FAB13BF49DB](https://github.com/user-attachments/assets/a8559cb1-71ca-444c-beae-45941e10c30b)# Furni Furniture Ecommerce Website (Frontend Demo)
+# Furni Furniture Ecommerce Website (Frontend Demo)
 
 A modern furniture ecommerce website built with React, TypeScript, and Tailwind CSS. This is a **frontend-only demo** with mock data - no backend required!
 
