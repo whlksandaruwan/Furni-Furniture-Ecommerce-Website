@@ -6,6 +6,7 @@ import path from 'path'
 export default defineConfig({
   plugins: [react()],
   base: '/furni-furniture-ecommerce/',
+  publicDir: 'public',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
@@ -14,5 +15,10 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
   },
 })
